@@ -10,7 +10,7 @@
   <header class="page-header">
     <a class="link-logo"><img class="site-logo" src="#" width="" height="" alt="логотип Device"></a>
     <div class="user-navigation-search">
-      <form class="search-form" action="#" method="post">
+      <form class="search-form" action="https://echo.htmlacademy.ru/courses" method="post">
         <label class="visually-hidden" for="search-form">Поиск по сайту</label>
         <input class="search-form-field" name="search-form" id="search-form" type="search" placeholder="Текст поиска">
         <button class="search-form-submit" type="button">Найти</button>
@@ -322,6 +322,31 @@
           width="" height="" alt=">Ссылка на сайт html academy"></a>
     </section>
   </footer>
+  <section class="modal delevery-on-order">
+    <h2 class="modal-title">Доставка под заказ</h2>
+    <form action="https://echo.htmlacademy.ru/courses" method="post">
+      <p>
+        <label for="modal-name">Ваше имя:</label>
+        <input class="modal-field" type="text" name="modal-name" id="modal-name" placeholder="Введите имя">
+      </p>
+      <p>
+        <label for="modal-email">Ваш e-mail:</label>
+        <input class="modal-field" type="email" name="modal-email" id="modal-email" placeholder="почта" required>
+      </p>
+      <p>
+        <label for="modal-desc">Что нужно привезти:</label>
+        <input class="modal-field" type="text" name="modal-desc" id="modal-desc" placeholder="В свободной форме">
+      </p>
+      <p>
+        <label for="modal-quantity">Количество:</label>
+        <button class="basket-add" type="button">-</button>
+        <input class="basket-amount" type="number" name="basket-amount" id="modal-quantity" value="1">
+        <button class="basket-add" type="button">+</button>
+      </p>
+      <button class="button" type="submit">Отправить</button>
+      <button class="modal-clode" type="button" aria-label="Закрыть">Закрыть</button>
+    </form>
+  </section>
 </body>
 
 </html>
