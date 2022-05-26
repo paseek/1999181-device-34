@@ -8,13 +8,13 @@
 
 <body class="page">
   <header class="page-header">
-    <a class="link-logo"><img class="site-logo" src="#" width="" height="" alt="логотип Device"></a>
-    <div class="user-navigation-search">
-      <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="visually-hidden" for="search-form">Поиск по сайту</label>
-        <input class="search-form-field" name="search-form" id="search-form" type="search" placeholder="Текст поиска">
-        <button class="search-form-submit" type="button">Найти</button>
-      </form>
+    <a class="link-logo"><img class="site-logo" src="img/logo.svg" width="145" height="36" alt="логотип Device"></a>
+    <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+      <label class="visually-hidden" for="search-form">Поиск по сайту</label>
+      <input class="search-form-field" name="search-form" id="search-form" type="search" placeholder="Текст поиска">
+      <button class="search-form-submit" type="button">Найти</button>
+    </form>
+    <nav class="user-navigation">
       <ul class="user-navigation-list">
         <li class="user-navigation-login">
           <a class="user-navigation-login-link" href="#">Войти</a>
@@ -29,7 +29,8 @@
           <a class="user-navigation-cart-link" href="#">Корзина</a>
         </li>
       </ul>
-    </div>
+    </nav>
+
     <nav class="main-navigation">
       <ul class="main-navigation-list">
         <li class="main-navigation-item">
@@ -76,8 +77,9 @@
         <h2 class="visually-hidden">Слайдер</h2>
         <ul class="slider-list">
           <li class="slider-item-01">
-            <img class="slider-image" src="#" alt="Описание картинки" width="" height="">
-            <b class="slider-title">Порхает как бабочка, жалит как пчела!</b>
+            <img class="slider-image" src="img/slider-image-01.png" width="560" height="560"
+              alt="Квадракоптер в черно-белых цветах с камерой">
+            <p class="slider-title">Порхает как бабочка, жалит как пчела!</p>
             <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным
               под
               стандартную камеру.</p>
@@ -89,7 +91,7 @@
           </li>
           <li class="slider-item-02">
             <img class="slider-image" src="#" alt="Описание картинки" width="" height="">
-            <b class="slider-title">Худеем правильно!</b>
+            <p class="slider-title">Худеем правильно!</p>
             <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
               соблюдать
               диету.</p>
@@ -100,7 +102,7 @@
           </li>
           <li class="slider-item-03">
             <img class="slider-image" src="#" alt="Описание картинки" width="" height="">
-            <b class="slider-title">Делай селфи, как Бен Стиллер! </b>
+            <p class="slider-title">Делай селфи, как Бен Стиллер! </p>
             <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
               метров
               длиной и весом всего 5 кг.</p>
@@ -193,7 +195,7 @@
             Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           <img class="services-image" src="#" alt="Описание картинки" width="" height="">
           <button class="button services-button" type="button">
-            <span class="services-button-text">Доставка</span>
+            Доставка
           </button>
         </li>
         <li class="services-item">
@@ -202,7 +204,7 @@
             выдадим вам новый. Товар, не дом, конечно же.</p>
           <img class="services-image" src="#" alt="Описание картинки" width="" height="">
           <button class="button services-button" type="button">
-            <span class="services-button-text">Гарантия</span>
+            Гарантия
           </button>
         </li>
         <li class="services-item">
@@ -211,7 +213,7 @@
             выгодные условия кредита. Выгодные для банка, разумеется.</p>
           <img class="services-image" src="#" alt="Описание картинки" width="" height="">
           <button class="button services-button" type="button">
-            <span class="services-button-text">Кредит</span>
+            Кредит
           </button>
         </li>
       </ul>
@@ -220,7 +222,7 @@
     <section class="delivery">
       <h2 class="visually hidden">Запрос на доставку рекдкого товара</h2>
       <button class="delivery-button" type="button">
-        <span class="delivery-title">Доставим редкий товар под заказ</span>
+        Доставим редкий товар под заказ
         <img class="categoty-image" src="#" alt="Описание картинки" width="" height="">
       </button>
     </section>
@@ -344,7 +346,7 @@
         <button class="basket-add" type="button">+</button>
       </p>
       <button class="button" type="submit">Отправить</button>
-      <button class="modal-clode" type="button" aria-label="Закрыть">Закрыть</button>
+      <button class="modal-close" type="button" aria-label="Закрыть">Закрыть</button>
     </form>
   </section>
 </body>
