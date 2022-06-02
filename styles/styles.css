@@ -73,6 +73,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* Pages */
@@ -87,10 +88,13 @@ body {
   line-height: 20px;
 }
 
-.search-form-field,
+.search-form-field {
+  font-family: inherit;
+}
+
 .search-form-submit {
   font-family: inherit;
-
+  cursor: pointer;
 }
 
 /* User-navigation */
@@ -163,6 +167,14 @@ body {
   color: var(--basic-dark);
 }
 
+.slider-pagination-button {
+  cursor: pointer;
+}
+
+.slider-button {
+  cursor: pointer;
+}
+
 /* Main-category */
 
 .category-list {
@@ -211,6 +223,10 @@ body {
   background-color: var(--special-yellow);
 }
 
+.delivery-button {
+  cursor: pointer;
+}
+
 /* About and Contacts */
 
 .about-us-item {
@@ -257,6 +273,7 @@ body {
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .subscribe-field {
@@ -421,4 +438,8 @@ body {
   letter-spacing: 0.2em;
   color: var(--basic-black);
   text-transform: uppercase;
+}
+
+.pagination-show-more {
+  cursor: pointer;
 }
