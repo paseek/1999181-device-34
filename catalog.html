@@ -43,6 +43,7 @@
       <ul class="main-navigation-list">
         <li class="main-navigation-item">
           <a class="main-navigation-item-link" href="#">Каталог товаров</a>
+          <img class="main-navigation-catalog-icon" src="img/icons/catalog-icon.svg" width="50" height="50" alt="">
           <ul class="main-navigation-sub-list">
             <li class="main-navigation-sub-item">
               <a class="main-navigation-sub-link" href="#">Виртуальная реальность</a>
@@ -80,12 +81,12 @@
   <!-- Заголовок и хлебрые крошки -->
 
   <main>
-    <h1>Моноподы для селфи</h1>
+    <h1 class="title">Моноподы для селфи</h1>
     <ol class="brearcrumbs-list">
-      <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
+      <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="index.html">Главная</a></li>
       <li class="brearcrumbs-item">
         <img class="breadcrums-arrow" src="img/icons/breadcrums-arrow.svg" width="4" height="7" alt="">
-        <a href="catalog.html">Каталог</a>
+        <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
         <img class="breadcrums-arrow" src="img/icons/breadcrums-arrow.svg" width="4" height="7" alt="">
       </li>
       <li class="brearcrumbs-item">Моноподы для селфи</li>
@@ -99,7 +100,7 @@
       <!-- Блок фильтров -->
 
       <section class="catalog-filter">
-        <h3>Фильтр:</h3>
+        <h3 class="catalog-filter-subtitle">Фильтр:</h3>
         <form class="catalog-filter-form" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="catalog-filter-group">
             <legend>Стоимость</legend>
@@ -169,7 +170,7 @@
       <!-- Блок сортировок -->
 
       <section class="catalog-sorting">
-        <h3>Сортировка:</h3>
+        <h3 class="catalog-filter-subtitle">Сортировка:</h3>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Популярное</option>
           <option value="cheap">Дешёвое</option>
@@ -227,7 +228,7 @@
             <a class="button catalog-product-button" href="product.html">Подробнее</a>
           </li>
         </ul>
-        <button class="pagination-show-more" type="button">Показать еще</button>
+        <button class="pagination-show-more catalog-filter-subtitle" type="button">Загрузить еще</button>
         <ul class="catalog-pagination-list">
           <li class="catalog-pagination-item">
             <a class="pagination-link pagination-back" href="product.html">Назад</a>
@@ -261,7 +262,7 @@
   <footer class="page-footer">
     <section class="footer-contacts">
       <h2 class="visually-hidden">Адрес магазина</h2>
-      <a class="link-logo" href="index.html"><img class="site-logo" src="img/logo.svg" width="145" height="36"
+      <a class="link-logo" href="index.html"><img class="site-logo" src="img/logo-yellow.svg" width="145" height="36"
           alt="логотип Device."></a>
       <address class="footer-contacts-address">
         <p class="footer-contacts-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
