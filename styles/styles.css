@@ -87,6 +87,12 @@ body {
   line-height: 20px;
 }
 
+.search-form-field,
+.search-form-submit {
+  font-family: inherit;
+
+}
+
 /* User-navigation */
 
 .user-navigation-list {
@@ -177,6 +183,10 @@ body {
 
 /* Services */
 
+.services-list {
+  list-style: none;
+}
+
 .services-text {
   color: var(--basic-dark)
 }
@@ -249,6 +259,10 @@ body {
   text-transform: uppercase;
 }
 
+.subscribe-field {
+  font-family: inherit;
+}
+
 /* Footer */
 
 .page-footer {
@@ -303,6 +317,7 @@ body {
 }
 
 .modal-field {
+  font-family: inherit;
   background-color: var(--basic-light);
 }
 
@@ -349,6 +364,10 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
+}
+
+.select-control {
+  font-family: inherit;
 }
 
 .catalog-products {
