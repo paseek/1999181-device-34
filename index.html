@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body class="page">
@@ -19,18 +22,18 @@
       <ul class="user-navigation-list">
         <li class="user-navigation-login">
           <img class="user-navigation-login-icon" src="img/icons/login.svg" width="13" height="12" alt="">
-          <a class="user-navigation-login-link" href="#">Войти</a>
+          <a class="user-navigation-link" href="#">Войти</a>
         </li>
         <li class="user-navigation-login">
-          <a class="user-navigation-login-link" href="#">Выйти</a>
+          <a class="user-navigation-link" href="#">Выйти</a>
         </li>
         <li class="user-navigation-compare">
           <img class="user-navigation-compare-icon" src="img/icons/compare.svg" width="10" height="12" alt="">
-          <a class="user-navigation-compare-link" href="#">Сравнить</a>
+          <a class="user-navigation-link" href="#">Сравнить</a>
         </li>
         <li class="user-navigation-cart">
           <img class="user-navigation-cart-icon" src="img/icons/cart.svg" width="16" height="14" alt="">
-          <a class="user-navigation-cart-link" href="#">Корзина</a>
+          <a class="user-navigation-link" href="#">Корзина</a>
         </li>
       </ul>
     </nav>
@@ -38,7 +41,10 @@
     <nav class="main-navigation">
       <ul class="main-navigation-list">
         <li class="main-navigation-item">
-          <a class="main-navigation-item-link" href="#">Каталог товаров</a>
+          <a class="main-navigation-item-link" href="#">Каталог товаров
+            <img class="main-navigation-catalog-icon" src="img/icons/catalog-icon.svg" width="50" height="50" alt="">
+          </a>
+
           <ul class="main-navigation-sub-list">
             <li class="main-navigation-sub-item">
               <a class="main-navigation-sub-link" href="#">Виртуальная реальность</a>
@@ -83,20 +89,20 @@
           <li class="slider-item-01">
             <img class="slider-image" src="img/slider-image-01.png" width="560" height="560"
               alt="Квадракоптер в черно-белых цветах с камерой.">
-            <p class="slider-title">Порхает как бабочка, жалит как пчела!</p>
+            <p class="title slider-title">Порхает как бабочка, жалит как пчела!</p>
             <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным
               под
               стандартную камеру.</p>
             <a class="button slider-button-details" href="#">Подробнее</a>
             <ul class="slider-advantages-list">
-              <li class="slider-advantages-item">800 м <span>дальность полета</span></li>
+              <li class="slider-advantages-item">800 м <span>Дальность полета</span></li>
               <li class="slider-advantages-item">50 м <span>Радиус поражения</span></li>
             </ul>
           </li>
           <li class="slider-item-02">
             <img class="slider-image" src="img/slider-image-02.png" alt="Фитнес-браслет черного цвета с перфорацией."
               width="560" height="560">
-            <p class="slider-title">Худеем правильно!</p>
+            <p class="title slider-title">Худеем правильно!</p>
             <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
               соблюдать
               диету.</p>
@@ -109,7 +115,7 @@
             <img class="slider-image" src="img/slider-image-03.png"
               alt="Селфи-палка черного цвета с синим креплением для размещения на плоской поверхности." width="560"
               height="560">
-            <p class="slider-title">Делай селфи, как Бен Стиллер! </p>
+            <p class="title slider-title">Делай селфи, как Бен Стиллер! </p>
             <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
               метров
               длиной и весом всего 5 кг.</p>
@@ -197,7 +203,7 @@
       <h2 class="visually-hidden">Услуги и сервисы</h2>
       <ul class="services-list">
         <li class="services-item">
-          <h3 class="services-title">Доставка</h3>
+          <h3 class="title services-title">Доставка</h3>
           <p class="services-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
             Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           <img class="services-image" src="img/icons/delivery-man.svg" width="136" height="164" alt="">
@@ -206,7 +212,7 @@
           </button>
         </li>
         <li class="services-item">
-          <h3 class="services-title">Гарантия</h3>
+          <h3 class="title services-title">Гарантия</h3>
           <p class="services-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы
             выдадим вам новый. Товар, не дом, конечно же.</p>
           <img class="services-image" src="img/icons/warranty.svg" width="171" height="195" alt="">
@@ -215,7 +221,7 @@
           </button>
         </li>
         <li class="services-item">
-          <h3 class="services-title">Кредит</h3>
+          <h3 class="title services-title">Кредит</h3>
           <p class="services-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее
             выгодные условия кредита. Выгодные для банка, разумеется.</p>
           <img class="services-image" src="img/icons/credit.svg" width="156" height="188" alt="">
@@ -227,16 +233,22 @@
     </section>
 
     <section class="delivery">
-      <h2 class="visually hidden">Запрос на доставку рекдкого товара</h2>
+      <h2 class="visually hidden">Запрос на доставку редкого товара</h2>
       <button class="delivery-button" type="button">
-        Доставим редкий товар под заказ
-        <img class="truck-icon" src="img/icons/truck.svg" width="47" height="31" alt="">
-        <img class="information-icon" src="img/icons/info.svg" width="2" height="12" alt="">
+        <div class="truck-icon-wrapper">
+          <img class="truck-icon" src="img/icons/truck.svg" width="47" height="31" alt="">
+        </div>
+        <div class="delivery-text">
+          Доставим редкий товар под заказ
+        </div>
+        <div class="delivery-info">
+          <img class="information-icon" src="img/icons/info.svg" width="2" height="12" alt="">
+        </div>
       </button>
     </section>
 
     <section class="about-us">
-      <h2 class="about-us-title">О нас</h2>
+      <h2 class="title about-us-title">О нас</h2>
       <p class="about-us-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
       <p class="about-us-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
       </p>
@@ -249,7 +261,7 @@
     </section>
 
     <section class="contacts">
-      <h2 class="cotacts-title">Контакты</h2>
+      <h2 class="title cotacts-title">Контакты</h2>
       <p class="cotacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить
         работоспособность
         покупки.</p>
@@ -267,7 +279,7 @@
     </section>
 
     <section class="subscribe">
-      <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+      <h2 class="title subscribe-title">Подпишитесь на рассылку</h2>
       <p class="subscribe-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а
         также
         акции спецпредложения и вот это вот всё.</p>
@@ -284,7 +296,7 @@
   <footer class="page-footer">
     <section class="footer-contacts">
       <h2 class="visually-hidden">Адрес магазина</h2>
-      <a class="link-logo" href="#"><img class="site-logo" src="img/logo.svg" width="145" height="36"
+      <a class="link-logo" href="#"><img class="site-logo" src="img/logo-yellow.svg" width="145" height="36"
           alt="логотип Device."></a>
       <address class="footer-contacts-address">
         <p class="footer-contacts-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -337,25 +349,28 @@
           src="img/icons/partner-logo.svg" width="115" height="33" alt=">Ссылка на сайт html academy."></a>
     </section>
   </footer>
+
   <section class="modal delevery-on-order">
-    <h2 class="modal-title">Доставка под заказ</h2>
+    <h2 class="title modal-title">Доставка под заказ</h2>
     <form action="https://echo.htmlacademy.ru/" method="post">
       <p>
-        <label for="modal-name">Ваше имя:</label>
+        <label class="modal-subtitle" for="modal-name">Ваше имя:</label>
         <input class="modal-field" type="text" name="modal-name" id="modal-name" placeholder="Введите имя">
+        <img class="modal-name-icon" src="img/icons/modal-login.svg" width="13" height="12" alt="">
       </p>
       <p>
-        <label for="modal-email">Ваш e-mail:</label>
+        <label class="modal-subtitle" for="modal-email">Ваш e-mail:</label>
         <input class="modal-field" type="email" name="modal-email" id="modal-email" placeholder="почта" required>
+        <img class="modal-name-icon" src="img/icons/modal-email.svg" width="15" height="12" alt="">
       </p>
       <p>
-        <label for="modal-desc">Что нужно привезти:</label>
+        <label class="modal-subtitle" for="modal-desc">Что нужно привезти:</label>
         <input class="modal-field" type="text" name="modal-desc" id="modal-desc" placeholder="В свободной форме">
       </p>
       <p>
-        <label for="modal-quantity">Количество:</label>
+        <label class="modal-subtitle" for="modal-quantity">Количество:</label>
         <button class="basket-add" type="button">-</button>
-        <input class="basket-amount" type="number" name="basket-amount" id="modal-quantity" value="1">
+        <input class="modal-field basket-amount" type="number" name="basket-amount" id="modal-quantity" value="1">
         <button class="basket-add" type="button">+</button>
       </p>
       <button class="button" type="submit">Отправить</button>
