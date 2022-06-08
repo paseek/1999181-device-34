@@ -46,7 +46,14 @@
 
 /* Global */
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -77,6 +84,10 @@ body {
 }
 
 /* Pages */
+
+.main-container {
+  flex-grow: 1;
+}
 
 .page-header {
   color: var(--basic-black);
