@@ -300,19 +300,20 @@ body {
   height: 100px;
 }
 
-.truck-icon {
+.truck-icon-wrapper {
   background-color: var(--special-yellow);
   width: 125px;
   height: 100%;
 }
 
-.information-icon {
+.information-icon-wrapper {
   width: 125px;
   height: 100%;
 }
 
 .delivery-button {
   cursor: pointer;
+  text-decoration: none;
 }
 
 /* About and Contacts */
@@ -429,7 +430,6 @@ body {
   text-transform: uppercase;
 }
 
-
 .footer-services-link {
   color: inherit;
   text-decoration: none;
@@ -469,9 +469,12 @@ body {
   background-color: var(--basic-light);
 }
 
+/* Catalog page */
 /* Breadcrumbs */
 
 .brearcrumbs-list {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 16px;
   line-height: 19px;
   list-style: none;
@@ -484,8 +487,22 @@ body {
 
 /* Products */
 
-.filter-and-products {
+
+.product-container {
   background-color: var(--basic-light);
+}
+
+.catalog-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-filter {
+  width: 320px;
+}
+
+.catalog-right-column {
+  width: 840px;
 }
 
 .catalog-filter-list {
@@ -520,6 +537,10 @@ body {
 
 .catalog-products {
   background-color: var(--basic-white);
+}
+
+.catalog-products-card {
+  width: 360px;
 }
 
 .catalog-products-list {
