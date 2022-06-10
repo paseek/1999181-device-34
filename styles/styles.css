@@ -103,9 +103,16 @@ body {
   background-color: var(--special-yellow);
 }
 
+.page-header-wrapper {
+  width: 1040px;
+  margin: 0 auto;
+}
+
 .search-form {
   font-size: 14px;
   line-height: 20px;
+  width: 517px;
+  margin-right: 26px;
 }
 
 .search-form-field {
@@ -126,7 +133,19 @@ body {
 
 .user-navigation-list {
   display: flex;
-  list-style: none;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.user-navigation-login {
+  width: 231px;
+  padding-right: 26px;
+}
+
+.user-navigation-compare {
+  width: 105px;
+  padding-right: 26px;
 }
 
 .user-navigation-link {
@@ -136,11 +155,37 @@ body {
 
 /* Main-navigation */
 
+
+/*
 .main-navigation-list {
   display: flex;
   justify-content: space-between;
   list-style: none;
 }
+*/
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-navigation-list {
+  display: flex;
+  width: 471px;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.main-navigation-item:nth-child(1) {
+  margin-right: 47px;
+}
+
+.main-navigation-item:nth-child(2) {
+  margin-right: 51px;
+}
+
 
 .main-navigation-item-link {
   font-family: "Raleway", sans-serif;
@@ -152,7 +197,7 @@ body {
   text-decoration: none;
 }
 
-.main-navigation-sub-list {
+.main-navigation-sublist {
   list-style: none;
 }
 

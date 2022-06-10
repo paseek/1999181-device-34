@@ -12,45 +12,44 @@
   <body class="page">
     <div class="container">
       <header class="page-header">
-        <a class="link-logo"><img class="site-logo" src="img/logo.svg" width="145" height="36"
-            alt="логотип Device."></a>
-        <div class="navigation-firs-wrapper">
-          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <img class="user-navigation-search-icon" src="img/icons/search.svg" width="16" height="16" alt="">
-            <label class="visually-hidden" for="search-form">Поиск по сайту</label>
-            <input class="search-form-field" name="search-form" id="search-form" type="search"
-              placeholder="Текст поиска">
-            <button class="search-form-submit" type="button">Найти</button>
-          </form>
-          <nav class="user-navigation">
-            <ul class="user-navigation-list">
-              <li class="user-navigation-login">
-                <img class="user-navigation-login-icon" src="img/icons/login.svg" width="13" height="12" alt="">
-                <a class="user-navigation-link" href="#">Войти</a>
-              </li>
-              <li class="user-navigation-login">
-                <a class="user-navigation-link" href="#">Выйти</a>
-              </li>
-              <li class="user-navigation-compare">
-                <img class="user-navigation-compare-icon" src="img/icons/compare.svg" width="10" height="12" alt="">
-                <a class="user-navigation-link" href="#">Сравнить</a>
-              </li>
-              <li class="user-navigation-cart">
-                <img class="user-navigation-cart-icon" src="img/icons/cart.svg" width="16" height="14" alt="">
-                <a class="user-navigation-link" href="#">Корзина</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <div class="page-header-wrapper">
+          <a class="link-logo"><img class="site-logo" src="img/logo.svg" width="145" height="36"
+              alt="логотип Device."></a>
+          <div class="navigation-firs-wrapper">
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+              <img class="user-navigation-search-icon" src="img/icons/search.svg" width="16" height="16" alt="">
+              <label class="visually-hidden" for="search-form">Поиск по сайту</label>
+              <input class="search-form-field" name="search-form" id="search-form" type="search"
+                placeholder="Текст поиска">
+              <button class="search-form-submit" type="button">Найти</button>
+            </form>
+            <nav class="user-navigation">
+              <ul class="user-navigation-list">
+                <li class="user-navigation-login">
+                  <img class="user-navigation-login-icon" src="img/icons/login.svg" width="13" height="12" alt="">
+                  <a class="user-navigation-link" href="#">Войти</a>
+                </li>
+                <!-- <li class="user-navigation-login visually-hidden">
+                  <a class="user-navigation-link" href="#">Выйти</a>
+                </li> -->
+                <li class="user-navigation-compare">
+                  <img class="user-navigation-compare-icon" src="img/icons/compare.svg" width="10" height="12" alt="">
+                  <a class="user-navigation-link" href="#">Сравнить</a>
+                </li>
+                <li class="user-navigation-cart">
+                  <img class="user-navigation-cart-icon" src="img/icons/cart.svg" width="16" height="14" alt="">
+                  <a class="user-navigation-link" href="#">Корзина</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
 
-        <nav class="main-navigation">
-          <ul class="main-navigation-list">
-            <li class="main-navigation-item">
+          <nav class="main-navigation">
+            <div class="main-navigation-category">
               <a class="main-navigation-item-link" href="#">Каталог товаров
                 <!-- <img class="main-navigation-catalog-icon" src="img/icons/catalog-icon.svg" width="50" height="50" alt=""> -->
               </a>
-
-              <ul class="main-navigation-sub-list">
+              <ul class="main-navigation-sublist">
                 <li class="main-navigation-sub-item">
                   <a class="main-navigation-sub-link" href="#">Виртуальная реальность</a>
                 </li>
@@ -70,20 +69,26 @@
                   <a class="main-navigation-sub-link" href="#">Квадракоптеры</a>
                 </li>
               </ul>
-            </li>
-            <li class="main-navigation-item">
-              <a class="main-navigation-item-link" href="#">Доставка</a>
-            </li>
-            <li class="main-navigation-item">
-              <a class="main-navigation-item-link" href="#">Гарантия</a>
-            </li>
-            <li class="main-navigation-item">
-              <a class="main-navigation-item-link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+            </div>
+
+            <div class="main-navigation-services">
+              <ul class="main-navigation-list">
+                <li class="main-navigation-item">
+                  <a class="main-navigation-item-link" href="#">Доставка</a>
+                </li>
+                <li class="main-navigation-item">
+                  <a class="main-navigation-item-link" href="#">Гарантия</a>
+                </li>
+                <li class="main-navigation-item">
+                  <a class="main-navigation-item-link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </header>
     </div>
+
     <main class="main-container">
       <div class="container">
         <h1 class="visually-hidden">Интернет-магазин гаджетов – «Девайс» </h1>
