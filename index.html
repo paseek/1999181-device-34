@@ -257,55 +257,48 @@
       <div class="services-container">
         <div class="container">
           <section class="services">
-            <h2 class="visually-hidden">Услуги и сервисы</h2>
-            <ul class="services-list">
-              <li class="services-item">
-                <span class="services-button-wrapper">
-                  <button class="button services-button" type="button">
-                    Доставка
-                  </button>
-                </span>
-                <span class="services-desc">
-                  <h3 class="title services-title">Доставка</h3>
-                  <p class="services-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
-                    бесплатно!
-                    Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-                </span>
-                <img class="services-image" src="img/icons/delivery-man.svg" width="136" height="164" alt="">
-              </li>
-              <li class="services-item">
-                <span class="services-desc">
-                  <h3 class="title services-title">Гарантия</h3>
-                  <p class="services-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
-                    переживайте,
-                    мы
-                    выдадим вам новый. Товар, не дом, конечно же.</p>
-                </span>
-                <img class="services-image" src="img/icons/warranty.svg" width="171" height="195" alt="">
-                <button class="button services-button" type="button">
-                  Гарантия
-                </button>
-              </li>
-              <li class="services-item">
-                <span class="services-desc">
-                  <h3 class="title services-title">Кредит</h3>
-                  <p class="services-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
-                    наиболее
-                    выгодные условия кредита. Выгодные для банка, разумеется.</p>
-                </span>
-                <img class="services-image" src="img/icons/credit.svg" width="156" height="188" alt="">
-                <button class="button services-button" type="button">
-                  Кредит
-                </button>
-              </li>
-            </ul>
+            <div class="tabs-wrapper">
+              <div class="tab-links">
+                <a class="button tab-title-link" href="#delivery">Доставка</a>
+                <a class="button tab-title-link" href="#warranty">Гарантия</a>
+                <a class="button tab-title-link" href="#credit">Кредит</a>
+              </div>
+              <div class="tab-contents">
+
+                <div class="tab-contents-item is-active" id="delivery">
+                  <div class="tab-contents-wrapper">
+                    <h2 class="title tab-contents-title">Доставка</h2>
+                    <p class="tab-contents-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+                      совершенно
+                      бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                  </div>
+                  <img class="tab-images" src="img/icons/delivery-man.svg" width="136" height="164" alt="">
+                </div>
+                <div class="tab-contents-item" id="warranty">
+                  <div class="tab-contents-wrapper">
+                    <h2 class="title tab-contents-title">Гарантия</h2>
+                    <p class="tab-contents-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
+                      переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+                  </div>
+                  <img class="services-image" src="img/icons/warranty.svg" width="171" height="195" alt="">
+                </div>
+                <div class="tab-contents-item" id="credit">
+                  <div class="tab-contents-wrapper">
+                    <h2 class="title tab-contents-title">Кредит</h2>
+                    <p class="tab-contents-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для
+                      вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+                  </div>
+                  <img class="services-image" src="img/icons/credit.svg" width="156" height="188" alt="">
+                </div>
+              </div>
+            </div>
           </section>
         </div>
       </div>
 
       <div class="container">
         <section class="delivery">
-          <h2 class="visually hidden">Запрос на доставку редкого товара</h2>
+          <h2 class="visually-hidden">Запрос на доставку редкого товара</h2>
           <a class="delivery-button" href="">
             <div class="truck-icon-wrapper">
               <img class="truck-icon" src="img/icons/truck.svg" width="47" height="31" alt="">
@@ -314,20 +307,21 @@
               <span class="delivery-text">Доставим редкий товар под заказ</span>
             </div>
             <div class="information-icon-wrapper">
-              <img class="information-icon" src="img/icons/info.svg" width="2" height="12" alt="">
+              <img class="information-icon" src="img/icons/info.svg" width="40" height="40" alt="">
             </div>
           </a>
         </section>
 
         <div class="about-contact-wrapper">
           <section class="about-us">
-            <h2 class="title about-us-title">О нас</h2>
-            <p class="about-us-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+            <h2 class="title about-contact-title">О нас</h2>
+            <p class="about-contact-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из
+              нас.
             </p>
-            <p class="about-us-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными
+            <p class="about-contact-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными
               компаниями:
             </p>
-            <ul class="about-us-list">
+            <ul class="about-contact-list">
               <li class="about-us-item">Меловые линии</li>
               <li class="about-us-item">СДИК</li>
               <li class="about-us-item">ТоксБерри</li>
@@ -336,14 +330,15 @@
           </section>
 
           <section class="contacts">
-            <h2 class="title cotacts-title">Контакты</h2>
-            <p class="cotacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить
+            <h2 class="title about-contact-title">Контакты</h2>
+            <p class="about-contact-text">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить
               работоспособность
               покупки.</p>
-            <h3 class="cotacts-subtitle">Интернет-магазин «Девайс»</h3>
+            <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
             <address class="cotacts-address">
-              <p class="cotacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-              <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+              <p class="cotacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.<br>
+                <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+              </p>
             </address>
             <h3 class="contacts-subtitle">Время работы</h3>
             <ul class="contacts-schedule-list">
@@ -358,18 +353,20 @@
       <div class="subscribe-container">
         <div class="container">
           <section class="subscribe">
-            <h2 class="title subscribe-title">Подпишитесь на рассылку</h2>
-            <p class="subscribe-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками,
-              а
-              также
-              акции спецпредложения и вот это вот всё.</p>
-            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="subscribe-field" type="email" name="subscribe-field" id="subscribe-field"
-                placeholder="Ваш e-mail">
-              <button class="subscribe-button" type="submit">Подписаться</button>
-              <img class="green-check" src="img/icons/green-check.svg" width="14" height="14" alt="">
-              <p class="subscribe-text subscribe-button-descriptions">Это бесплатно</p>
-            </form>
+            <div class="subscribe-text-wrapper">
+              <h2 class="title subscribe-title">Подпишитесь на рассылку</h2>
+              <p class="subscribe-info">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами,
+                распаковками, а также акции спецпредложения и вот это вот всё.</p>
+            </div>
+            <div class="subscribe-form-wrapper">
+              <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+                <input class="subscribe-field" type="email" name="subscribe-field" id="subscribe-field"
+                  placeholder="Ваш e-mail">
+                <button class="subscribe-button" type="submit">Подписаться</button>
+              </form>
+              <p class="subscribe-button-descriptions"><img class="green-check" src="img/icons/green-check.svg"
+                  width="14" height="14" alt="">Это бесплатно</p>
+            </div>
           </section>
         </div>
       </div>

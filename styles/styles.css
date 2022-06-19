@@ -389,6 +389,10 @@ body {
 
 /* Main-category */
 
+.category {
+  margin-bottom: 70px;
+}
+
 .category-list {
   display: flex;
   justify-content: space-between;
@@ -418,43 +422,75 @@ body {
 /* Services */
 
 .services-container {
-  width: 100%;
   background-color: var(--basic-light);
+  margin-bottom: 70px;
 }
 
-.services-list {
-  list-style: none;
+.tabs-wrapper {
+  display: flex;
 }
 
-.services-item {
+.tab-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  white-space: nowrap;
+  width: 287px;
+  list-style-type: none;
+  padding: 64px 0 63px 0;
+
+}
+
+.tab-title-link {
+  margin: 0;
+  margin-bottom: 46px;
+}
+
+.tab-contents-item {
   display: flex;
   justify-content: space-between;
+  width: 694px;
+  padding: 72.5px 63px 72.5px 116px;
 }
 
-.services-button-wrapper {
-  order: -1;
-  width: 287px;
+.tab-contents-wrapper {
+  margin-right: 110px;
 }
 
-.services-button-wrapper.services-button {
-  text-align: left;
+.tab-contents-title {
+  margin: 0;
+  margin-bottom: 34px;
 }
 
-.services-text {
-  color: var(--basic-dark);
+.tab-contents-text {
+  margin: 0;
 }
 
+.tab-contents > #delivery:target ~ .tab-links > a[href="#delivery"],
+.tab-contents > #warranty:target ~ .tab-links > a[href="#warranty"],
+.tab-contents > #credit:target ~ .tab-links > a[href="#credit"] {
+  background-color: #bbdefb;
+  cursor: default;
+}
 
+.tab-contents > div:not(.tab-links) {
+  display: none;
+}
 
+.tab-contents > div:target {
+  display: flex;
+}
 
 /* Delivery */
 
-
-
+.delivery {
+  margin-bottom: 70px;
+}
 
 .delivery-button {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -474,9 +510,17 @@ body {
   height: 100%;
 }
 
+.truck-icon {
+  margin: 35px 39px 34px 39px;
+}
+
 .information-icon-wrapper {
   width: 125px;
   height: 100%;
+}
+
+.information-icon {
+  margin: 30px 42px;
 }
 
 .delivery-button {
@@ -488,23 +532,47 @@ body {
 
 .about-contact-wrapper {
   display: flex;
+  margin-bottom: 70px;
+}
+
+.about-us {
+  margin-right: 108px;
+}
+
+.about-contact-title {
+  margin: 0;
+  margin-top: 47px;
+  margin-bottom: 48px;
+}
+
+.about-contact-list {
+  margin: 0;
+  padding-left: 20px;
+  margin-bottom: 30px;
 }
 
 .about-us-item {
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
+  margin-bottom: 19px;
 }
 
-.about-us-text,
-.cotacts-text,
-.contacts-schedule-item {
+.about-us-item:last-child {
+  margin-bottom: 0;
+}
+
+.about-contact-text {
   color: var(--basic-dark);
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .contacts-subtitle {
   font-size: 24px;
   font-weight: 700;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .cotacts-address {
@@ -512,18 +580,59 @@ body {
   color: var(--basic-dark);
 }
 
+.cotacts-address-text {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
 .contacts-phone {
   color: inherit;
+}
+
+.contacts-schedule-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.contacts-schedule-item {
+  color: var(--basic-dark);
 }
 
 /* Subscribe */
 
 .subscribe-container {
   background-color: var(--basic-light);
+  padding-bottom: 56px;
 }
 
-.subscribe-text {
+.subscribe {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe-text-wrapper {
+  display: flex;
+  margin-bottom: 144px;
+}
+
+.subscribe-title {
+  margin: 0;
+  margin-top: 64px;
+  margin-right: 252px;
+  width: 348px;
+  /* не понял почему при задании ширины правый блок становиться ближе */
+}
+
+.subscribe-info {
+  margin: 0;
+  margin-top: 74px;
   color: var(--basic-dark);
+}
+
+.subscribe-form-wrapper {
+  display: flex;
 }
 
 .subscribe-button {
@@ -537,8 +646,18 @@ body {
   cursor: pointer;
 }
 
+.subscribe-button-descriptions {
+  margin: 0;
+}
+
+.subscribe-form {
+  width: 810px;
+  margin-right: 188px;
+}
+
 .subscribe-field {
   font-family: inherit;
+  width: 557px;
 }
 
 /* Footer */
