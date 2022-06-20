@@ -336,6 +336,7 @@ body {
 
 .slider-advantages-wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .slider-advantages-list {
@@ -395,6 +396,7 @@ body {
 
 .category-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
   padding: 0;
@@ -685,7 +687,7 @@ body {
 }
 
 .footer-contacts {
-  margin-right: 124px;
+  margin-right: 118px;
 }
 
 .footer-contacts-text {
@@ -699,10 +701,17 @@ body {
   width: 240px;
 }
 
+.footer-contacts-tel {
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+}
+
 .footer-services-list {
   display: flex;
-  width: 444px;
-  list-style: none;
+  flex-wrap: wrap;
+  width: 454px;
+  list-style-type: none;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -711,7 +720,7 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   margin: 0;
-  margin-right: 183px;
+  margin-right: 173px;
   padding: 0;
 }
 
@@ -763,6 +772,7 @@ body {
 }
 
 .footer-tel-link {
+  display: block;
   color: inherit;
 }
 
@@ -883,7 +893,7 @@ body {
 }
 
 .catalog-filter-item:last-child {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .catalog-filter-item-radio {
@@ -891,7 +901,7 @@ body {
 }
 
 .catalog-filter-item-radio:last-child {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .catalog-sort-subtitle {
