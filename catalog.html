@@ -175,12 +175,12 @@
                 <fieldset class="catalog-filter-group">
                   <legend class="filter-name">Bluetooth</legend>
                   <ul class="catalog-filter-list">
-                    <li class="catalog-filter-item">
+                    <li class="catalog-filter-item-radio">
                       <label class="cotalog-filter-text">
                         <input class="catalog-filter-control" type="radio" name="bluetooth" value="yes" checked>Есть
                       </label>
                     </li>
-                    <li>
+                    <li class="catalog-filter-item-radio">
                       <label class="cotalog-filter-text">
                         <input class="catalog-filter-control" type="radio" name="bluetooth" value="no">Нет
                       </label>
@@ -263,29 +263,33 @@
                   </li>
                 </ul>
                 <button class="pagination-show-more catalog-filter-subtitle" type="button">Загрузить еще</button>
-                <ul class="catalog-pagination-list">
-                  <li class="catalog-pagination-item">
-                    <a class="pagination-link pagination-back" href="product.html">Назад</a>
-                  </li>
-                  <li class="catalog-pagination-item">
-                    <a class="pagination-link" href="#">1</a>
-                  </li>
-                  <li class="catalog-pagination-item">
-                    <a class="pagination-link" href="#">2</a>
-                  </li>
-                  <li class="catalog-pagination-item">
-                    <a class="pagination-link" href="#">3</a>
-                  </li>
-                  <li class="catalog-pagination-item">
-                    <a class="pagination-link" href="#">...</a>
-                  </li>
-                  <li class="catalog-pagination-item">
-                    <a class="pagination-link" href="#">15</a>
-                  </li>
-                  <li class="catalog-pagination-item">
-                    <a class="pagination-link pagination-next" href="#">Вперед</a>
-                  </li>
-                </ul>
+                <div class="catalog-pagination-wrapper">
+                  <ul class="catalog-pagination-list">
+                    <li class="catalog-pagination-item">
+                      <a class="pagination-back" href="product.html">Назад</a>
+                    </li>
+                    <ul class="catalot-pagination-sublist">
+                      <li class="catalog-pagination-subitem">
+                        <a class="pagination-link" href="#">1</a>
+                      </li>
+                      <li class="catalog-pagination-subitem">
+                        <a class="pagination-link" href="#">2</a>
+                      </li>
+                      <li class="catalog-pagination-subitem">
+                        <a class="pagination-link" href="#">3</a>
+                      </li>
+                      <li class="catalog-pagination-subitem">
+                        <a class="pagination-link" href="#">...</a>
+                      </li>
+                      <li class="catalog-pagination-subitem">
+                        <a class="pagination-link" href="#">15</a>
+                      </li>
+                    </ul>
+                    <li class="catalog-pagination-item">
+                      <a class="pagination-next" href="#">Вперед</a>
+                    </li>
+                  </ul>
+                </div>
               </section>
             </div>
           </div>
