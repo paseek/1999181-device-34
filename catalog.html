@@ -11,76 +11,91 @@
 
     <div class="container">
       <header class="page-header">
-        <a class="link-logo" href="index.html"><img class="site-logo" src="img/logo.svg" width="145" height="36"
-            alt="логотип Device."></a>
-        <div class="navigation-firs-wrapper">
-          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <img class="user-navigation-search-icon" src="img/icons/search.svg" width="16" height="16" alt="">
-            <label class="visually-hidden" for="search-form">Поиск по сайту</label>
-            <input class="search-form-field" name="search-form" id="search-form" type="search"
-              placeholder="Текст поиска">
-            <button class="search-form-submit" type="button">Найти</button>
-          </form>
-          <nav class="user-navigation">
-            <ul class="user-navigation-list">
-              <li class="user-navigation-login">
-                <img class="user-navigation-login-icon" src="img/icons/login.svg" width="13" height="12" alt="">
-                <a class="user-navigation-link" href="#">Войти</a>
-              </li>
-              <li class="user-navigation-login">
-                <a class="user-navigation-link" href="#">Выйти</a>
-              </li>
-              <li class="user-navigation-compare">
-                <img class="user-navigation-compare-icon" src="img/icons/compare.svg" width="10" height="12" alt="">
-                <a class="user-navigation-link" href="#">Сравнить</a>
-              </li>
-              <li class="user-navigation-cart">
-                <img class="user-navigation-cart-icon" src="img/icons/cart.svg" width="16" height="14" alt="">
-                <a class="user-navigation-link" href="#">Корзина</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-
-        <nav class="main-navigation">
-          <ul class="main-navigation-list">
-            <li class="main-navigation-item">
-              <a class="main-navigation-item-link" href="#">Каталог товаров
-                <!-- <img class="main-navigation-catalog-icon" src="img/icons/catalog-icon.svg" width="50" height="50" alt=""> -->
-              </a>
-
-              <ul class="main-navigation-sub-list">
-                <li class="main-navigation-sub-item">
-                  <a class="main-navigation-sub-link" href="#">Виртуальная реальность</a>
+        <div class="page-header-wrapper">
+          <a class="link-logo" href="index.html"><img class="site-logo" src="img/logo.svg" width="145" height="36"
+              alt="логотип Device."></a>
+          <div class="navigation-first-wrapper">
+            <div class="search-wrapper">
+              <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+                <img class="user-navigation-search-icon" src="img/icons/search.svg" width="16" height="16" alt="">
+                <label class="visually-hidden" for="search-form">Поиск по сайту</label>
+                <input class="search-form-field" name="search-form" id="search-form" type="search"
+                  placeholder="Текст поиска">
+                <button class="search-form-submit" type="button">Найти</button>
+              </form>
+            </div>
+            <nav class="user-navigation">
+              <ul class="user-navigation-list">
+                <li class="user-navigation-login">
+                  <img class="user-navigation-login-icon" src="img/icons/login.svg" width="13" height="12" alt="">
+                  <a class="user-navigation-link" href="#">Войти</a>
                 </li>
-                <li class="main-navigation-sub-item">
-                  <a class="main-navigation-sub-link" href="#">Моноподы для селфи</a>
+                <!-- <li class="user-navigation-login visually-hidden">
+                  <a class="user-navigation-link" href="#">Выйти</a>
+                </li> -->
+                <li class="user-navigation-compare">
+                  <img class="user-icon user-navigation-compare-icon" src="img/icons/compare.svg" width="10" height="12"
+                    alt="">
+                  <a class="user-navigation-link" href="#">Сравнить</a>
                 </li>
-                <li class="main-navigation-sub-item">
-                  <a class="main-navigation-sub-link" href="#">Экшн-камеры</a>
-                </li>
-                <li class="main-navigation-sub-item">
-                  <a class="main-navigation-sub-link" href="#">Фитнес-браслеты</a>
-                </li>
-                <li class="main-navigation-sub-item">
-                  <a class="main-navigation-sub-link" href="#">Умные часы</a>
-                </li>
-                <li class="main-navigation-sub-item">
-                  <a class="main-navigation-sub-link" href="#">Квадракоптеры</a>
+                <li class="user-navigation-cart">
+                  <img class="user-icon user-navigation-cart-icon" src="img/icons/cart.svg" width="16" height="14"
+                    alt="">
+                  <a class="user-navigation-link" href="#">Корзина</a>
                 </li>
               </ul>
-            </li>
-            <li class="main-navigation-item">
-              <a class="main-navigation-item-link" href="#">Доставка</a>
-            </li>
-            <li class="main-navigation-item">
-              <a class="main-navigation-item-link" href="#">Гарантия</a>
-            </li>
-            <li class="main-navigation-item">
-              <a class="main-navigation-item-link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+            </nav>
+          </div>
+          <nav class="main-navigation">
+            <div class="main-navigation-category">
+              <div class="main-navigation-item-category">
+                <a class="main-navigation-item-link" href="#">Каталог товаров
+                  <!-- <img class="main-navigation-catalog-icon" src="img/icons/catalog-icon.svg" width="50" height="50"
+                    alt=""> -->
+                </a>
+              </div>
+              <ul class="main-navigation-list">
+                <li class="main-navigation-item-delivery">
+                  <a class="main-navigation-item-link" href="#">Доставка</a>
+                </li>
+                <li class="main-navigation-item-waranty">
+                  <a class="main-navigation-item-link" href="#">Гарантия</a>
+                </li>
+                <li class="main-navigation-item-contact">
+                  <a class="main-navigation-item-link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <nav class="second-navigation">
+            <div class="main-mavigation-submenu">
+              <div class="row-submenu first-row-submenu">
+                <span class="main-navigation-sub-item">
+                  <a class="main-navigation-sub-link" href="#">Виртуальная реальность</a>
+                </span>
+                <span class="main-navigation-sub-item">
+                  <a class="main-navigation-sub-link" href="#">Моноподы для селфи</a>
+                </span>
+                <span class="main-navigation-sub-item">
+                  <a class="main-navigation-sub-link" href="#">Экшн-камеры</a>
+                </span>
+              </div>
+              <div class="row-submenu second-row-submenu">
+                <span class="main-navigation-sub-item">
+                  <a class="main-navigation-sub-link" href="#">Фитнес-браслеты</a>
+                </span>
+                <span class="main-navigation-sub-item">
+                  <a class="main-navigation-sub-link" href="#">Умные часы</a>
+                </span>
+              </div>
+              <div class="row-submenu third-row-submenu">
+                <span class="main-navigation-sub-item">
+                  <a class="main-navigation-sub-link" href="#">Квадракоптеры</a>
+                </span>
+              </div>
+            </div>
+          </nav>
+        </div>
       </header>
     </div>
 
@@ -88,15 +103,15 @@
 
     <main class="main-container">
       <div class="container">
-        <h1 class="title">Моноподы для селфи</h1>
-        <ol class="brearcrumbs-list">
+        <h1 class="title catalog-title">Моноподы для селфи</h1>
+        <ol class="breadcrumbs-list">
           <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="index.html">Главная</a></li>
-          <li class="brearcrumbs-item">
-            <img class="breadcrums-arrow" src="img/icons/breadcrums-arrow.svg" width="4" height="7" alt="">
+          <li class="breadcrumbs-item">
+            <!-- <img class="breadcrums-arrow" src="img/icons/breadcrums-arrow.svg" width="4" height="7" alt=""> -->
             <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
-            <img class="breadcrums-arrow" src="img/icons/breadcrums-arrow.svg" width="4" height="7" alt="">
+            <!-- <img class="breadcrums-arrow" src="img/icons/breadcrums-arrow.svg" width="4" height="7" alt=""> -->
           </li>
-          <li class="brearcrumbs-item">Моноподы для селфи</li>
+          <li class="breadcrumbs-item">Моноподы для селфи</li>
         </ol>
       </div>
 
@@ -112,7 +127,7 @@
               <h3 class="catalog-filter-subtitle">Фильтр:</h3>
               <form class="catalog-filter-form" method="get" action="https://echo.htmlacademy.ru">
                 <fieldset class="catalog-filter-group">
-                  <legend>Стоимость</legend>
+                  <legend class="filter-name">Стоимость</legend>
                   <div class="rage-control">
                     <div class="scale">
                       <div class="bar">
@@ -128,7 +143,7 @@
                   </div>
                 </fieldset>
                 <fieldset class="catalog-filter-group">
-                  <legend>Цвет</legend>
+                  <legend class="filter-name">Цвет</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="cotalog-filter-text">
@@ -158,7 +173,7 @@
                   </ul>
                 </fieldset>
                 <fieldset class="catalog-filter-group">
-                  <legend>Bluetooth</legend>
+                  <legend class="filter-name">Bluetooth</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="cotalog-filter-text">
@@ -179,20 +194,22 @@
             <!-- Блок сортировок -->
             <div class="catalog-right-column">
               <section class="catalog-sorting">
-                <h3 class="catalog-filter-subtitle">Сортировка:</h3>
+                <h3 class="catalog-sort-subtitle">Сортировка:</h3>
                 <select class="select-control" aria-label="Сортировка">
                   <option value="popular">Популярное</option>
                   <option value="cheap">Дешёвое</option>
                   <option value="expensive">Дорогое</option>
                 </select>
-                <a class="sort-up" href="#">
-                  <span class="visually-hidden">Сортировка по возрастанию</span>
-                  <img class="sort-up-icon" src="img/icons/sort-up.svg" width="11" height="10" alt="">
-                </a>
-                <a class="sort-down" href="#">
-                  <span class="visually-hidden">Cортировка по убыванию</span>
-                  <img class="sort-up-icon" src="img/icons/sort-up.svg" width="11" height="10" alt="">
-                </a>
+                <div class="sorting-up-down">
+                  <a class="sort-up" href="#">
+                    <span class="visually-hidden">Сортировка по возрастанию</span>
+                    <img class="sort-up-icon" src="img/icons/sort-up.svg" width="11" height="10" alt="">
+                  </a>
+                  <a class="sort-down" href="#">
+                    <span class="visually-hidden">Cортировка по убыванию</span>
+                    <img class="sort-up-icon" src="img/icons/sort-up.svg" width="11" height="10" alt="">
+                  </a>
+                </div>
               </section>
 
               <!-- Блок товаров -->
@@ -202,37 +219,45 @@
                 <ul class="catalog-products-list">
                   <li class="catalog-products-card">
                     <a class="catalog-products-link" href="product.html">
-                      <h3 class="catalog-products-title">Любительская селфи-палка</h3>
                       <img class="catalog-products-image" src="img/products/product-01.jpg" width="360" height="380"
                         alt="Селфи-палка с черной ручкой и хромированным выдвижным механизмом.">
-                      <p class="catalog-product-price">500 ₽</p>
+                      <div class="catalog-products-info">
+                        <h3 class="catalog-products-title">Любительская селфи-палка</h3>
+                        <p class="catalog-product-price">500 ₽</p>
+                      </div>
                     </a>
                     <a class="button catalog-product-button" href="product.html">Подробнее</a>
                   </li>
                   <li class="catalog-products-card">
                     <a class="catalog-products-link" href="product.html">
-                      <h3 class="catalog-products-title">Профессиональная селфи-палка</h3>
                       <img class="catalog-products-image" src="img/products/product-02.jpg" width="360" height="380"
                         alt="Черная селфи-палка с кнопкой для активации съемки.">
-                      <p class="catalog-product-price">1500 ₽</p>
+                      <div class="catalog-products-info">
+                        <h3 class="catalog-products-title">Профессиональная селфи-палка</h3>
+                        <p class="catalog-product-price">1500 ₽</p>
+                      </div>
                     </a>
                     <a class="button catalog-product-button" href="product.html">Подробнее</a>
                   </li>
                   <li class="catalog-products-card">
                     <a class="catalog-products-link" href="product.html">
-                      <h3 class="catalog-products-title">Непотопляемая селфи-палка</h3>
                       <img class="catalog-products-image" src="img/products/product-03.jpg" width="360" height="380"
                         alt="Селфи-палка с широкой ручкой с вставками желтого цвета и ремешком для запястья.">
-                      <p class="catalog-product-price">2500 ₽</p>
+                      <div class="catalog-products-info">
+                        <h3 class="catalog-products-title">Непотопляемая селфи-палка</h3>
+                        <p class="catalog-product-price">2500 ₽</p>
+                      </div>
                     </a>
                     <a class="button catalog-product-button" href="product.html">Подробнее</a>
                   </li>
                   <li class="catalog-products-card">
                     <a class="catalog-products-link" href="product.html">
-                      <h3 class="catalog-products-title">Селфи-палка «Следуй за мной»</h3>
                       <img class="catalog-products-image" src="img/products/product-04.jpg" width="360" height="380"
                         alt="Селфи-палка в виде человеческой руки.">
-                      <p class="catalog-product-price">1500 ₽</p>
+                      <div class="catalog-products-info">
+                        <h3 class="catalog-products-title">Селфи-палка «Следуй за мной»</h3>
+                        <p class="catalog-product-price">1500 ₽</p>
+                      </div>
                     </a>
                     <a class="button catalog-product-button" href="product.html">Подробнее</a>
                   </li>
@@ -276,8 +301,8 @@
       <div class="container">
         <footer class="page-footer">
           <div class="footer-logo">
-            <a class="link-logo" href="index.html"><img class="site-logo" src="img/logo-yellow.svg" width="145"
-                height="36" alt="логотип Device."></a>
+            <a class="link-logo" href="#"><img class="site-logo" src="img/logo-yellow.svg" width="145" height="36"
+                alt="логотип Device."></a>
           </div>
 
           <div class="footer-main-wrapper">
@@ -312,19 +337,19 @@
                 <li class="footer-social-item">
                   <a class="footer-social-button" href="#">
                     <span class="visually-hidden">Телеграм</span>
-                    <img class="footer-icon" src="img/icons/telegram.svg" width="13" height="11" alt="">
+                    <img class="footer-icon" src="img/icons/telegram.svg" width="40" height="40" alt="">
                   </a>
                 </li>
                 <li class="footer-social-item">
                   <a class="footer-social-button" href="#">
                     <span class="visually-hidden">Ютуб</span>
-                    <img class="footer-icon" src="img/icons/youtube.svg" width="16" height="11" alt="">
+                    <img class="footer-icon" src="img/icons/youtube.svg" width="40" height="40" alt="">
                   </a>
                 </li>
                 <li class="footer-social-item">
                   <a class="footer-social-button" href="#">
                     <span class="visually-hidden">Твиттер</span>
-                    <img class="footer-icon" src="img/icons/twitter.svg" width="16" height="14" alt="">
+                    <img class="footer-icon" src="img/icons/twitter.svg" width="40" height="40" alt="">
                   </a>
                 </li>
               </ul>

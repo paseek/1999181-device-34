@@ -670,16 +670,26 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: var(--basic-white);
+  padding-top: 62px;
+  padding-bottom: 62px;
 }
 
 .footer-main-wrapper {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 62px;
 }
 
-.footer-second-wrapper {
-  display: flex;
-  justify-content: flex-end;
+.footer-logo {
+  margin-bottom: 35px;
+}
+
+.footer-contacts {
+  margin-right: 124px;
+}
+
+.footer-contacts-text {
+  margin: 0;
 }
 
 .footer-contacts-address {
@@ -691,7 +701,6 @@ body {
 
 .footer-services-list {
   display: flex;
-  justify-content: space-between;
   width: 444px;
   list-style: none;
   font-family: "Raleway", sans-serif;
@@ -701,11 +710,27 @@ body {
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  margin: 0;
+  margin-right: 183px;
+  padding: 0;
+}
+
+.footer-services-item {
+  margin-right: 35px;
+}
+
+.footer-services-item:last-child {
+  margin-right: 0;
+}
+
+.footer-second-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .footer-social-list {
   display: flex;
-  justify-content: space-between;
   width: 150px;
   list-style: none;
   font-family: "Raleway", sans-serif;
@@ -715,6 +740,17 @@ body {
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  margin: 0;
+  margin-right: 390px;
+  padding: 0;
+}
+
+.footer-social-item {
+  margin-right: 15px;
+}
+
+.footer-social-item:last-child {
+  margin-right: 0;
 }
 
 .footer-services-link {
@@ -730,9 +766,6 @@ body {
   color: inherit;
 }
 
-.footer-trademark {
-  width: 150px;
-}
 
 /* Modal */
 
@@ -759,18 +792,32 @@ body {
 /* Catalog page */
 /* Breadcrumbs */
 
-.brearcrumbs-list {
+.catalog-title {
+  margin: 0;
+  margin-top: 35px;
+  margin-bottom: 16px;
+}
+
+.breadcrumbs-list {
   display: flex;
   flex-wrap: wrap;
   font-size: 16px;
   line-height: 19px;
   list-style: none;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
 }
 
 .breadcrumbs-link {
   color: inherit;
   text-decoration: none;
 }
+
+.breadcrumbs-item {
+  margin-right: 32px;
+}
+
 
 /* Products */
 
@@ -792,10 +839,6 @@ body {
   width: 840px;
 }
 
-.catalog-filter-list {
-  list-style: none;
-}
-
 .catalog-filter-subtitle {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -804,18 +847,58 @@ body {
   line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 25px 0;
 }
 
 .catalog-filter-group {
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
+  border: none;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+}
+
+.filter-name {
+  margin-bottom: 20px;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .cotalog-filter-text {
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
+}
+
+.catalog-sort-subtitle {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin: 0;
+  margin-left: 40px;
+  padding: 25px 0;
+}
+
+.sorting-up-down {
+  margin-right: 20px;
+}
+
+.catalog-sorting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .select-control {
@@ -828,29 +911,58 @@ body {
 
 .catalog-products-card {
   width: 360px;
+  margin-bottom: 44px;
+}
+
+.catalog-products-image {
+  margin-bottom: 32px;
 }
 
 .catalog-products-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 70px;
+  padding-left: 40px;
 }
 
 .catalog-products-link {
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
   color: inherit;
 }
 
+.catalog-products-info {
+  display: flex;
+}
+
 .catalog-product-price {
+  font-style: normal;
   font-size: 18px;
   line-height: 21px;
-  color: var(--basic-dark)
+  font-weight: 400;
+  color: var(--basic-dark);
+  margin: 0;
+  width: 50%;
+  text-align: end;
 }
 
 .catalog-products-title {
-  font-size: normal;
+  font-size: 18px;
+  font-type: normal;
   font-weight: 700;
   line-height: 20px;
+  margin: 0;
+  width: 50%;
+}
+
+.catalog-product-button {
+  display: none;
 }
 
 .catalog-pagination-list {
