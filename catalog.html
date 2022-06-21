@@ -12,18 +12,16 @@
     <div class="container">
       <header class="page-header">
         <div class="page-header-wrapper">
-          <a class="link-logo" href="index.html"><img class="site-logo" src="img/logo.svg" width="145" height="36"
+          <a class="link-logo"><img class="site-logo" src="img/logo.svg" width="145" height="36"
               alt="логотип Device."></a>
           <div class="navigation-first-wrapper">
-            <div class="search-wrapper">
-              <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-                <img class="user-navigation-search-icon" src="img/icons/search.svg" width="16" height="16" alt="">
-                <label class="visually-hidden" for="search-form">Поиск по сайту</label>
-                <input class="search-form-field" name="search-form" id="search-form" type="search"
-                  placeholder="Текст поиска">
-                <button class="search-form-submit" type="button">Найти</button>
-              </form>
-            </div>
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+              <img class="user-navigation-search-icon" src="img/icons/search.svg" width="16" height="16" alt="">
+              <label class="visually-hidden" for="search-form">Поиск по сайту</label>
+              <input class="search-form-field" name="search-form" id="search-form" type="search"
+                placeholder="Текст поиска">
+              <button class="search-form-submit" type="button">Найти</button>
+            </form>
             <nav class="user-navigation">
               <ul class="user-navigation-list">
                 <li class="user-navigation-login">
@@ -47,53 +45,34 @@
             </nav>
           </div>
           <nav class="main-navigation">
-            <div class="main-navigation-category">
-              <div class="main-navigation-item-category">
-                <a class="main-navigation-item-link" href="#">Каталог товаров
-                  <!-- <img class="main-navigation-catalog-icon" src="img/icons/catalog-icon.svg" width="50" height="50"
-                    alt=""> -->
-                </a>
-              </div>
-              <ul class="main-navigation-list">
-                <li class="main-navigation-item-delivery">
-                  <a class="main-navigation-item-link" href="#">Доставка</a>
-                </li>
-                <li class="main-navigation-item-waranty">
-                  <a class="main-navigation-item-link" href="#">Гарантия</a>
-                </li>
-                <li class="main-navigation-item-contact">
-                  <a class="main-navigation-item-link" href="#">Контакты</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-          <nav class="second-navigation">
-            <div class="main-mavigation-submenu">
-              <div class="row-submenu first-row-submenu">
-                <span class="main-navigation-sub-item">
-                  <a class="main-navigation-sub-link" href="#">Виртуальная реальность</a>
-                </span>
-                <span class="main-navigation-sub-item">
-                  <a class="main-navigation-sub-link" href="#">Моноподы для селфи</a>
-                </span>
-                <span class="main-navigation-sub-item">
-                  <a class="main-navigation-sub-link" href="#">Экшн-камеры</a>
-                </span>
-              </div>
-              <div class="row-submenu second-row-submenu">
-                <span class="main-navigation-sub-item">
-                  <a class="main-navigation-sub-link" href="#">Фитнес-браслеты</a>
-                </span>
-                <span class="main-navigation-sub-item">
-                  <a class="main-navigation-sub-link" href="#">Умные часы</a>
-                </span>
-              </div>
-              <div class="row-submenu third-row-submenu">
-                <span class="main-navigation-sub-item">
-                  <a class="main-navigation-sub-link" href="#">Квадракоптеры</a>
-                </span>
-              </div>
-            </div>
+            <ul class="main-navigation-list">
+              <li class="main-navigation-item">
+                <a class="main-navigation-link main-navigation-link-catalog" href="#">Каталог товаров</a>
+                <ul class="second-navigation">
+                  <li class="row-submenu first-row-submenu">
+                    <a class="main-navigation-sub-link" href="#">Виртуальная реальность</a>
+                    <a class="main-navigation-sub-link" href="#">Моноподы для селфи</a>
+                    <a class="main-navigation-sub-link" href="#">Экшн-камеры</a>
+                  </li>
+                  <li class="row-submenu second-row-submenu">
+                    <a class="main-navigation-sub-link" href="#">Фитнес-браслеты</a>
+                    <a class="main-navigation-sub-link" href="#">Умные часы</a>
+                  </li>
+                  <li class="row-submenu third-row-submenu">
+                    <a class="main-navigation-sub-link" href="#">Квадракоптеры</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-navigation-item">
+                <a class="main-navigation-link main-navigation-link-delivery" href="#">Доставка</a>
+              </li>
+              <li class="main-navigation-item">
+                <a class="main-navigation-link main-navigation-link-waranty" href="#">Гарантия</a>
+              </li>
+              <li class="main-navigation-item">
+                <a class="main-navigation-link main-navigation-link-contacts" href="#">Контакты</a>
+              </li>
+            </ul>
           </nav>
         </div>
       </header>
@@ -263,33 +242,33 @@
                   </li>
                 </ul>
                 <button class="pagination-show-more catalog-filter-subtitle" type="button">Загрузить еще</button>
-                <div class="catalog-pagination-wrapper">
-                  <ul class="catalog-pagination-list">
-                    <li class="catalog-pagination-item">
-                      <a class="pagination-back" href="product.html">Назад</a>
+
+                <div class="catalog-pagination-list">
+                  <div class="catalog-pagination-item">
+                    <a class="pagination-back" href="product.html">Назад</a>
+                  </div>
+                  <ul class="catalot-pagination-sublist">
+                    <li class="catalog-pagination-subitem">
+                      <a class="pagination-link" href="#">1</a>
                     </li>
-                    <ul class="catalot-pagination-sublist">
-                      <li class="catalog-pagination-subitem">
-                        <a class="pagination-link" href="#">1</a>
-                      </li>
-                      <li class="catalog-pagination-subitem">
-                        <a class="pagination-link" href="#">2</a>
-                      </li>
-                      <li class="catalog-pagination-subitem">
-                        <a class="pagination-link" href="#">3</a>
-                      </li>
-                      <li class="catalog-pagination-subitem">
-                        <a class="pagination-link" href="#">...</a>
-                      </li>
-                      <li class="catalog-pagination-subitem">
-                        <a class="pagination-link" href="#">15</a>
-                      </li>
-                    </ul>
-                    <li class="catalog-pagination-item">
-                      <a class="pagination-next" href="#">Вперед</a>
+                    <li class="catalog-pagination-subitem">
+                      <a class="pagination-link" href="#">2</a>
+                    </li>
+                    <li class="catalog-pagination-subitem">
+                      <a class="pagination-link" href="#">3</a>
+                    </li>
+                    <li class="catalog-pagination-subitem">
+                      <a class="pagination-link" href="#">...</a>
+                    </li>
+                    <li class="catalog-pagination-subitem">
+                      <a class="pagination-link" href="#">15</a>
                     </li>
                   </ul>
+                  <div class="catalog-pagination-item">
+                    <a class="pagination-next" href="#">Вперед</a>
+                  </div>
                 </div>
+
               </section>
             </div>
           </div>
@@ -301,41 +280,41 @@
 
     </main>
 
-    <div class="footer-container">
+    <footer class="footer-container">
       <div class="container">
-        <footer class="page-footer">
+        <div class="page-footer">
           <div class="footer-logo">
             <a class="link-logo" href="#"><img class="site-logo" src="img/logo-yellow.svg" width="145" height="36"
                 alt="логотип Device."></a>
           </div>
 
-          <div class="footer-main-wrapper">
-            <section class="footer-contacts">
+          <section class="footer-main-wrapper">
+            <div class="footer-contacts">
               <h2 class="visually-hidden">Адрес магазина</h2>
               <address class="footer-contacts-address">
                 <p class="footer-contacts-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
               </address>
-            </section>
+            </div>
 
-            <section class="footer-services">
+            <div class="footer-services">
               <h2 class="visually-hidden">Услуги и контакты магазина</h2>
               <ul class="footer-services-list">
                 <li class="footer-services-item"><a class="footer-services-link" href="#">Доставка</a></li>
                 <li class="footer-services-item"><a class="footer-services-link" href="#">Гарантия</a></li>
                 <li class="footer-services-item"><a class="footer-services-link" href="#">Контакты</a></li>
               </ul>
-            </section>
+            </div>
 
-            <section class="footer-tel">
+            <div class="footer-tel">
               <h2 class="visually-hidden">Телефон магазина</h2>
-              <address class="footer-contacts-address">
+              <address class="footer-contacts-tel">
                 <a class="footer-tel-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
               </address>
-            </section>
-          </div>
+            </div>
+          </section>
 
-          <div class="footer-second-wrapper">
-            <section class="footer-social">
+          <section class="footer-second-wrapper">
+            <div class="footer-social">
               <h2 class="visually-hidden">Наши социальные сети:</h2>
               <ul class="footer-social-list">
                 <li class="footer-social-item">
@@ -357,17 +336,17 @@
                   </a>
                 </li>
               </ul>
-            </section>
+            </div>
 
-            <section class="footer-trademark">
+            <div class="footer-trademark">
               <h2 class="visually-hidden">Сделано в .html academy</h2>
               <a class="footer-trademark-link" href="https://htmlacademy.ru/"><img class="footer-trademark-imgage"
                   src="img/icons/partner-logo.svg" width="115" height="33" alt=">Ссылка на сайт html academy."></a>
-            </section>
-          </div>
-        </footer>
+            </div>
+          </section>
+        </div>
       </div>
-    </div>
+    </footer>
   </body>
 
 </html>

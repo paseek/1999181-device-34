@@ -136,7 +136,7 @@ body {
 
 /* Search */
 
-.search-wrapper {
+/* .search-wrapper {
   font-size: 16px;
   line-height: 20px;
   width: 517px;
@@ -146,7 +146,7 @@ body {
   padding-bottom: 8px;
   border: 2px solid var(--basic-black);
   border-radius: 20px;
-}
+} */
 
 .user-navigation-search-icon {
   padding: 0;
@@ -155,6 +155,15 @@ body {
 
 .search-form {
   display: flex;
+  font-size: 16px;
+  line-height: 20px;
+  width: 517px;
+  margin: 0;
+  margin-right: 26px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 2px solid var(--basic-black);
+  border-radius: 20px;
 }
 
 .search-form-field {
@@ -213,7 +222,73 @@ body {
 
 /* Main-navigation */
 
-.main-navigation-category {
+.main-navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navigation-link {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: inherit;
+  text-decoration: none;
+}
+
+.main-navigation-link-delivery {
+  margin-right: 37px;
+  margin-left: -16px;
+}
+
+.main-navigation-link-waranty {
+  margin-right: 51px;
+}
+
+.second-navigation {
+  display: flex;
+  padding: 0;
+  padding-top: 29px;
+  padding-bottom: 27px;
+}
+
+.row-submenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-row-submenu {
+  width: 222px;
+  margin-right: 30px;
+}
+
+.second-row-submenu {
+  width: 181px;
+  margin-right: 30px;
+}
+
+.main-navigation-sub-link {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  color: var(--basic-black);
+  margin-bottom: 18px;
+}
+
+/* .second-navigation {
+  display: none;
+} */
+
+/* .main-navigation-category {
   display: flex;
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -224,9 +299,9 @@ body {
   letter-spacing: 0.2em;
   margin: 0;
   margin-bottom: 14px;
-}
+} */
 
-.main-navigation-list {
+/* .main-navigation-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -239,6 +314,10 @@ body {
 .main-navigation-item-category {
   margin: 0;
   width: 50%;
+}
+
+.second-navigation {
+  display: none;
 }
 
 .main-navigation-catalog-icon {
@@ -262,15 +341,15 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   padding: 15px 0;
-}
+} */
 
-.main-mavigation-submenu {
+/* .main-mavigation-submenu {
   display: flex;
   font-size: 16px;
   line-height: 18px;
-}
+} */
 
-.row-submenu {
+/* .row-submenu {
   display: flex;
   flex-direction: column;
   min-height: 120px;
@@ -284,20 +363,31 @@ body {
 
 .second-row-submenu {
   width: 211px;
-}
+} */
 
-.main-navigation-sub-item {
+/* .main-navigation-sub-item {
   margin-bottom: 18px;
-}
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+} */
 
-.main-navigation-sub-item:last-child {
+/* .main-navigation-sub-item:last-child {
   margin-bottom: 0;
-}
+} */
 
-.main-navigation-sub-link {
+/* .main-navigation-sub-link {
+  margin-bottom: 18px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
   text-decoration: none;
   color: var(--basic-black);
-}
+} */
 
 /* Slider */
 
@@ -308,7 +398,7 @@ body {
   padding: 0;
 }
 
-.slider-list li {
+.slider-item {
   display: flex;
   justify-content: space-between;
 }
@@ -334,16 +424,17 @@ body {
   margin-bottom: 29px;
 }
 
-.slider-advantages-wrapper {
+.slider-advantages-list {
   display: flex;
   flex-wrap: wrap;
-}
-
-.slider-advantages-list {
   list-style: none;
   padding: 0;
   margin: 0;
   margin-right: 20px;
+}
+
+.slider-advantages-items {
+  margin-right: 40px;
 }
 
 .slider-advantages-item {
@@ -357,12 +448,38 @@ body {
 
 .slider-advantages-desc {
   font-size: 16px;
+  margin: 0;
 }
 
-.slider-advantages-item span {
+/* .slider-advantages-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+/* .slider-advantages-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 20px;
+} */
+
+/* .slider-advantages-item {
+  color: var(--basic-dark);
+  font-size: 36px;
+  line-height: 30px;
+  min-height: 30px;
+  margin: 0;
+  margin-bottom: 12px;
+} */
+/*
+.slider-advantages-desc {
+  font-size: 16px;
+} */
+
+/* .slider-advantages-item span {
   font-size: 16px;
   line-height: 30px;
-}
+} */
 
 .slider-text {
   color: var(--basic-dark);
@@ -501,6 +618,7 @@ body {
   font-weight: 800;
   font-size: 20px;
   line-height: 23px;
+  color: var(--basic-black);
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
