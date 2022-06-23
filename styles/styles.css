@@ -1135,7 +1135,7 @@ body {
 
 /* Пагинация */
 
-.catalog-pagination-list {
+/* .catalog-pagination-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1144,13 +1144,26 @@ body {
   margin: 0 auto;
   padding: 15.5px 25px;
   width: 710px;
+} */
+
+.catalog-pagination-list-grid {
+  display: grid;
+  grid-template-columns: min-content auto min-content;
+  background-color: var(--basic-light-grey);
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 25px 25px;
+  width: 710px;
+  align-items: center;
 }
 
 .catalot-pagination-sublist {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  justify-content: center;
 }
 
 .catalog-pagination-subitem {
@@ -1167,8 +1180,21 @@ body {
   opacity: 0.3;
 }
 
-.pagination-back,
+/* .pagination-back,
 .pagination-next {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  text-decoration: none;
+} */
+
+.pagination-back-grid,
+.pagination-next-grid {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
