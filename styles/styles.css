@@ -90,6 +90,16 @@ img {
 
 /* Buttons */
 
+/* .button::after {
+  content: "";
+  width: 100%;
+  height: 8px;
+  background-color: #ffe17f;
+  position: absolute;
+  top: 30%;
+  left: 0;
+} */
+
 .button {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -101,7 +111,13 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
+  height: 40px;
+  padding: 10px 5px;
+  position: relative;
+  box-sizing: border-box;
+  border: none;
 }
+
 
 .container {
   width: 1160px;
@@ -117,6 +133,8 @@ img {
 /* Logo */
 
 .site-logo {
+  display: block;
+  margin-bottom: 10px;
   position: relative;
   top: -20px;
 }
@@ -139,38 +157,53 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
   margin-bottom: 45px;
 }
 
 /* Search */
 
-.user-navigation-search-icon {
-  padding: 0;
-  margin: 10px 16px;
-}
 
 .search-form {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: 1fr auto;
   font-size: 16px;
   line-height: 20px;
 
   width: 517px;
+  height: 40px;
   margin: 0;
   margin-right: 26px;
   border: 2px solid var(--basic-black);
   border-radius: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.user-navigation-search-icon {
+  padding: 0;
+  margin: 10px 16px;
+  fill: var(--basic-black);
+}
+
+input::placeholder {
+  color: var(--basic-black);
+  padding-right: 48px;
 }
 
 .search-form-field {
   margin: 0;
   padding: 0;
+  padding-left: 48px;
   font-family: inherit;
   font-size: inherit;
   color: inherit;
+  border-radius: 20px 0 0 20px;
   border: none;
+  border-right: 2px solid var(--basic-black);
   background-color: var(--special-yellow);
+  background-image: url(/img/icons/search.svg);
+  background-repeat: no-repeat;
+  background-position: 20px;
 }
 
 .search-form-submit {
@@ -200,10 +233,12 @@ img {
 .user-navigation-login {
   width: 231px;
   padding-right: 26px;
+  box-sizing: border-box;
 }
 
+
 .user-navigation-login-icon {
-  margin-right: 13px;
+  margin-right: 10px;
 }
 
 .user-icon {
@@ -211,7 +246,14 @@ img {
 }
 
 .user-navigation-compare {
-  padding-right: 24px;
+  width: 108px;
+  margin-right: 18px;
+}
+
+.user-navigation-cart {
+  width: 140px;
+  text-align: end;
+
 }
 
 .user-navigation-link {
@@ -596,13 +638,32 @@ img {
   font-size: 18px;
   line-height: 24px;
   order: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.categoty-image {
+  display: block;
+  margin-bottom: 33px;
 }
 
 /* Services */
 
 .services-container {
+  /* background-color: var(--basic-light); */
+  position: relative;
+  margin-bottom: 142px;
+}
+
+.services-container::after {
+  content: "";
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  top: 102px;
+
   background-color: var(--basic-light);
-  margin-bottom: 70px;
 }
 
 .tabs-wrapper {
@@ -616,12 +677,33 @@ img {
   white-space: nowrap;
   width: 287px;
   list-style-type: none;
+  margin: 0;
   padding: 64px 0 63px 0;
+
 }
 
 .tab-title-link {
+  width: 140px;
   margin: 0;
   margin-bottom: 46px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.tab-title-link-active {
+  width: 260px;
+  height: 40px;
+  background-color: var(--basic-black);
+  color: var(--special-yellow);
+  text-align: start;
+}
+
+.button-tab-active {
+  margin: 0 auto;
+}
+
+.button-tab {
+  min-width: 160px;
 }
 
 .tab-contents-item {
@@ -647,21 +729,6 @@ img {
 .tab-contents-text {
   margin: 0;
 }
-
-/* .tab-contents > #delivery:target ~ .tab-links > a[href="#delivery"],
-.tab-contents > #warranty:target ~ .tab-links > a[href="#warranty"],
-.tab-contents > #credit:target ~ .tab-links > a[href="#credit"] {
-  background-color: #bbdefb;
-  cursor: default;
-} */
-
-/* .tab-contents > div:not(.tab-links) {
-  display: none;
-} */
-
-/* .tab-contents > div:target {
-  display: flex;
-} */
 
 /* Delivery */
 
@@ -987,6 +1054,7 @@ img {
   margin: 0;
   margin-top: 35px;
   margin-bottom: 16px;
+  margin-left: 60px;
 }
 
 .breadcrumbs-list {
@@ -997,6 +1065,7 @@ img {
   list-style: none;
   margin: 0;
   margin-bottom: 35px;
+  margin-left: 60px;
   padding: 0;
 }
 
@@ -1022,6 +1091,7 @@ img {
 
 .catalog-filter {
   width: 320px;
+  margin-left: 60px;
 }
 
 .catalog-right-column {
