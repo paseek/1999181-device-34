@@ -222,31 +222,62 @@ input::placeholder {
   color: inherit;
 }
 
+.user-navigation-item {
+  position: relative;
+}
+
 .user-navigation-login {
   width: 231px;
-  padding-right: 26px;
+  margin-right: 26px;
   box-sizing: border-box;
 }
 
-.user-icon {
-  margin-right: 8px;
-  fill: var(--basic-black);
-}
-
 .user-navigation-compare {
-  width: 108px;
+  width: 105px;
   margin-right: 18px;
 }
 
 .user-navigation-cart {
-  width: 140px;
+  width: 117px;
   text-align: end;
-
+  /* background-image: url(/img/icons/cart-counter.svg);
+  background-repeat: no-repeat;
+  background-position: 20px; */
 }
 
 .user-navigation-link {
   text-decoration: none;
   color: inherit;
+}
+
+.user-navigation-link-login {
+  padding-left: 25px;
+}
+
+.user-navigation-link-compare {
+  padding-left: 22px;
+}
+
+.user-navigation-link-cart {
+  padding-left: 43px;
+}
+
+.user-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  fill: var(--basic-black);
+  margin: auto 0;
+}
+
+.user-icon-cart {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 86px;
+  fill: var(--basic-black);
+  margin: auto 0;
 }
 
 /* Main-navigation */
