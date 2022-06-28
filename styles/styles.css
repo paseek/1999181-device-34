@@ -127,6 +127,7 @@ img {
 .page-header {
   color: var(--basic-black);
   background-color: var(--special-yellow);
+  height: 350px;
   margin-top: 40px;
 }
 
@@ -281,6 +282,7 @@ input::placeholder {
 }
 
 /* Main-navigation */
+
 .main-navigation-list {
   display: flex;
   flex-wrap: wrap;
@@ -301,30 +303,27 @@ input::placeholder {
   text-decoration: none;
 }
 
-.main-navigation-list li:hover .second-navigation {
-  visibility: visible;
+.main-navigation-item-catalog {
+  width: 292px;
+  margin-right: 276px;
 }
 
-.main-navigation-link-delivery {
-  margin-right: 37px;
-  margin-left: -16px;
-}
-
-.main-navigation-link-waranty {
-  margin-right: 51px;
+.main-navigation-item-catalog:hover .second-navigation {
+  display: flex;
 }
 
 .second-navigation {
-  visibility: hidden;
-  display: flex;
+  display: none;
+  width: 1040px;
   padding: 0;
-  padding-top: 29px;
+  padding-top: 33px;
   padding-bottom: 27px;
 }
 
 .row-submenu {
   display: flex;
   flex-direction: column;
+  min-height: 120px;
 }
 
 .first-row-submenu {
@@ -345,8 +344,24 @@ input::placeholder {
   line-height: 18px;
   text-decoration: none;
   color: var(--basic-black);
-  margin-bottom: 18px;
+  margin-bottom: 21px;
 }
+
+.main-navigation-item-delivery {
+  width: 125px;
+  margin-right: 47px;
+}
+
+.main-navigation-item-warranty {
+  width: 121px;
+  margin-right: 51px;
+}
+
+.main-navigation-item-contacts {
+  width: 128px;
+}
+
+
 
 /* .main-navigation-wrapper {
   display: flex;
