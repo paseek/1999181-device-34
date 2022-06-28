@@ -168,7 +168,6 @@ img {
   grid-template-columns: 1fr auto;
   font-size: 16px;
   line-height: 20px;
-
   width: 517px;
   height: 40px;
   margin: 0;
@@ -176,13 +175,6 @@ img {
   border: 2px solid var(--basic-black);
   border-radius: 20px;
   box-sizing: border-box;
-  position: relative;
-}
-
-.user-navigation-search-icon {
-  padding: 0;
-  margin: 10px 16px;
-  fill: var(--basic-black);
 }
 
 input::placeholder {
@@ -236,13 +228,9 @@ input::placeholder {
   box-sizing: border-box;
 }
 
-
-.user-navigation-login-icon {
-  margin-right: 10px;
-}
-
 .user-icon {
-  margin-right: 10px;
+  margin-right: 8px;
+  fill: var(--basic-black);
 }
 
 .user-navigation-compare {
