@@ -1039,6 +1039,20 @@ input::placeholder {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: relative;
+}
+
+.footer-social::before {
+  position: absolute;
+  top: 33px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  width: 80px;
+  height: 7px;
+  background-color: var(--special-yellow-dark);
+
 }
 
 .footer-social-list {
@@ -1066,8 +1080,6 @@ input::placeholder {
 .footer-social-item:last-child {
   margin-right: 0;
 }
-
-.footer-social-button {}
 
 .footer-social-icon {
   position: absolute;
