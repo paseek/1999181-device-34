@@ -16,7 +16,7 @@
     <div class="container">
       <header class="page-header">
         <div class="page-header-wrapper">
-          <a class="link-logo" href="index.html"><img class="site-logo" src="img/logo.svg" width="145" height="36"
+          <a class="link-logo"><img class="site-logo" src="img/logo.svg" width="145" height="36"
               alt="логотип Device."></a>
           <div class="navigation-first-wrapper">
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -72,8 +72,21 @@
           </div>
           <nav class="main-navigation">
             <ul class="main-navigation-list">
-              <li class="main-navigation-item">
-                <a class="main-navigation-link main-navigation-link-catalog" href="/catalog.html">Каталог товаров</a>
+              <li class="main-navigation-item main-navigation-item-catalog">
+                <a class="main-navigation-link main-navigation-link-catalog" href="/catalog.html">Каталог товаров
+                  <svg class="main-navigation-icon-catalog" aria-hidden="true" focusable="false" width="50" height="51"
+                    viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle opacity=".3" cx="25" cy="25.79" r="24" stroke="#000" stroke-width="2" />
+                    <g opacity=".3" clip-path="url(#a)">
+                      <path d="M33 24.79h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" fill="#000" />
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" transform="translate(17 17.79)" d="M0 0h16v16H0z" fill="#8F3A84" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
                 <ul class="second-navigation">
                   <li class="row-submenu first-row-submenu">
                     <a class="main-navigation-sub-link" href="#">Виртуальная реальность</a>
@@ -89,13 +102,13 @@
                   </li>
                 </ul>
               </li>
-              <li class="main-navigation-item">
+              <li class="main-navigation-item main-navigation-item-delivery">
                 <a class="main-navigation-link main-navigation-link-delivery" href="#">Доставка</a>
               </li>
-              <li class="main-navigation-item">
-                <a class="main-navigation-link main-navigation-link-waranty" href="#">Гарантия</a>
+              <li class="main-navigation-item main-navigation-item-warranty">
+                <a class="main-navigation-link main-navigation-link-warranty" href="#">Гарантия</a>
               </li>
-              <li class="main-navigation-item">
+              <li class="main-navigation-item main-navigation-item-contacts">
                 <a class="main-navigation-link main-navigation-link-contacts" href="#">Контакты</a>
               </li>
             </ul>

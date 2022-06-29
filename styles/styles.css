@@ -1169,8 +1169,11 @@ input::placeholder {
   text-decoration: none;
 }
 
-.breadcrumbs-item {
-  margin-right: 32px;
+.breadcrumbs-item:not(:last-child) {
+  padding-right: 32px;
+  background-image: url(/img/icons/breadcrums-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 14px center;
 }
 
 /* Products */
