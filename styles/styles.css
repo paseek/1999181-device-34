@@ -1267,7 +1267,27 @@ input::placeholder {
 /* Сортировки */
 
 .sorting-up-down {
-  margin-right: 20px;
+  margin-right: 40px;
+}
+
+.sort {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.sort-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.sort-down {
+  transform: rotate(180deg);
 }
 
 .catalog-sorting {
