@@ -453,7 +453,12 @@ img {
 
 .active {
   display: inline-block;
-  border-bottom: 2px solid var(--basic-black);
+  /* border-bottom: 2px solid var(--basic-black);
+  line-height: 24px; */
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+
 
 }
 
