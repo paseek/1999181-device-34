@@ -126,7 +126,7 @@ img {
   left: 0;
   width: 100%;
   height: 8px;
-  background-color: var(--special-yellow-dark);
+  background-color: var(--special-yellow);
   z-index: -1;
 }
 
@@ -444,7 +444,7 @@ img {
 .main-navigation-link:focus,
 .main-navigation-sub-link:focus,
 .breadcrumbs-link:focus,
-.site-logo:focus {
+.link-logo:focus {
   outline: 2px solid var(--special-purple);
   outline-offset: 4px;
   /* box-shadow: 0 0 0 2px var(--special-purple);
@@ -546,6 +546,39 @@ img {
   align-self: flex-start;
   min-width: 210px;
 }
+
+.slider-button-details,
+.button-tab,
+.about-us-button,
+.about-us-write {
+  z-index: 1;
+}
+
+.slider-button-details:hover,
+.button-tab:hover,
+.about-us-button:hover,
+.about-us-write:hover {
+  background-color: var(--special-yellow);
+}
+
+.slider-button-details:active::before,
+.button-tab:active::before,
+.about-us-button:active::before,
+.about-us-write:active::before {
+  top: 0;
+  height: 100%;
+  background-color: var(--special-yellow-dark);
+}
+
+.slider-button-details:focus,
+.button-tab:focus,
+.about-us-button:focus,
+.about-us-write:focus {
+  outline: 2px solid var(--special-purple);
+  outline-offset: 2px;
+}
+
+
 
 /* Main-category */
 
@@ -1299,6 +1332,21 @@ img {
   z-index: 1;
 }
 
+.filter-button:hover {
+  background-color: var(--special-yellow);
+}
+
+.filter-button:active::before {
+  top: 0;
+  height: 100%;
+  background-color: var(--special-yellow-dark);
+}
+
+.filter-button:focus {
+  outline: 2px solid var(--special-purple);
+  outline-offset: 2px;
+}
+
 /* Сортировки */
 
 .sorting-up-down {
@@ -1313,6 +1361,8 @@ img {
 }
 
 .sort-icon {
+  fill: #000000;
+  opacity: 0.2;
   position: absolute;
   top: 0;
   left: 0;
@@ -1321,8 +1371,17 @@ img {
   margin: auto;
 }
 
-.sort-down {
-  transform: rotate(180deg);
+.sort-icon:hover {
+  opacity: 0.5;
+}
+
+.sort-icon:active {
+  opacity: 1;
+}
+
+.sort:focus {
+  outline: 2px solid var(--special-purple);
+  outline-offset: 2px;
 }
 
 .catalog-sorting {
@@ -1341,6 +1400,36 @@ img {
   background-color: var(--basic-white);
   padding-bottom: 78px;
 }
+
+.catalog-products-card {
+  position: relative;
+}
+
+.catalog-products-card:hover .catalog-product-button {
+  display: block;
+}
+
+.catalog-products-card:hover .catalog-products-link {
+  opacity: 0.3;
+}
+
+.catalog-products-card:hover .button::before {
+  background-color: var(--special-yellow);
+}
+
+.catalog-products-card:active .button::before {
+  background-color: var(--special-yellow-dark);
+}
+
+.catalog-products-link:focus {
+  outline: 2px solid var(--special-purple);
+  outline-offset: 2px;
+}
+
+
+
+
+
 
 /* .catalog-products-card {
   width: 360px;
@@ -1430,7 +1519,16 @@ img {
 } */
 
 .catalog-product-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 220px;
+  height: 40px;
   display: none;
+  z-index: 1;
 }
 
 /* Кнопка "Показать еще" */
@@ -1455,6 +1553,19 @@ img {
   cursor: pointer;
 }
 
+.pagination-show-more:hover {
+  border: 3px solid var(--basic-black);
+}
+
+.pagination-show-more:active {
+  opacity: 0.3;
+}
+
+.pagination-show-more:focus {
+  outline: 2px solid var(--special-purple);
+  outline-offset: 2px;
+}
+
 /* Пагинация */
 
 .catalog-pagination-list {
@@ -1463,8 +1574,8 @@ img {
   background-color: var(--basic-light-grey);
   list-style-type: none;
   margin: 0 auto;
-  padding: 25px 25px;
-  width: 710px;
+  width: 760px;
+  min-height: 71px;
   align-items: center;
 }
 
@@ -1478,8 +1589,6 @@ img {
 }
 
 .catalog-pagination-subitem {
-  width: 40px;
-  height: 40px;
   text-align: center;
 }
 
@@ -1489,6 +1598,22 @@ img {
   line-height: 20px;
   color: var(--basic-dark);
   opacity: 0.3;
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.pagination-link:hover {
+  opacity: 1;
+}
+
+.pagination-link:active {
+  opacity: 0.1;
+}
+
+.pagination-link:focus {
+  outline: 2px solid var(--special-purple);
+  outline-offset: 2px;
 }
 
 .pagination-back,
@@ -1502,4 +1627,21 @@ img {
   color: var(--basic-black);
   text-transform: uppercase;
   text-decoration: none;
+  padding: 25px 25px;
+}
+
+.pagination-back:hover,
+.pagination-next:hover {
+  background-color: var(--basic-grey);
+}
+
+.pagination-back:active,
+.pagination-next:active {
+  opacity: 0.3;
+}
+
+.pagination-back:focus,
+.pagination-next:focus {
+  outline: 2px solid var(--special-purple);
+  outline-offset: 2px;
 }
