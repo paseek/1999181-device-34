@@ -565,6 +565,20 @@ img {
   width: 160px;
 }
 
+.category-link:hover .categoty-image-wrapper {
+  background-color: var(--special-yellow-dark);
+}
+
+.category-link:active {
+  opacity: 0.3;
+}
+
+.category-link:focus {
+  outline: 2px solid var(--special-purple);
+  outline-offset: 2px;
+}
+
+
 .category-link {
   display: flex;
   flex-wrap: wrap;
@@ -582,9 +596,33 @@ img {
   padding: 0;
 }
 
+.categoty-image-wrapper {
+  background-color: var(--special-yellow);
+  width: 160px;
+  height: 160px;
+  position: relative;
+  margin: 0;
+  margin-bottom: 33px;
+}
+
 .categoty-image {
   display: block;
-  margin-bottom: 33px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.categoty-image-exept {
+  display: block;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 43px;
+  bottom: 0;
+  right: 0;
 }
 
 /* Services */
