@@ -12,110 +12,109 @@
   </head>
 
   <body class="page">
-
-    <div class="container">
-      <header class="page-header">
-        <div class="page-header-wrapper">
-          <a class="link-logo" href="/index.html"><img class="site-logo" src="img/logo.svg" width="145" height="36"
-              alt="логотип Device."></a>
-          <div class="navigation-first-wrapper">
-            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="visually-hidden" for="search-form">Поиск по сайту</label>
-              <input class="search-form-field" name="search-form" id="search-form" type="search"
-                placeholder="Текст поиска">
-              <button class="search-form-submit" type="button">Найти</button>
-            </form>
-            <nav class="user-navigation">
-              <ul class="user-navigation-list">
-                <li class="user-navigation-item user-navigation-login">
-                  <svg class="user-icon" aria-hidden="true" focusable="false" width="15" height="13" viewBox="0 0 15 13"
-                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#a)">
-                      <path
-                        d="M1 12.39h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3 0-1.9-1.6-3.5-3.5-3.5S4 1.99 4 3.89c0 1.3.7 2.4 1.7 3-2.6.7-4.5 2.9-4.7 5.5Z" />
-                    </g>
-                    <defs>
-                      <clipPath id="a">
-                        <path transform="translate(0 .39)" d="M0 0h15v12H0z" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <a class="user-navigation-link user-navigation-link-login" href="#">Войти</a>
-                </li>
-                <!-- <li class="user-navigation-login visually-hidden">
+    <header class="page-header">
+      <div class="page-header-wrapper">
+        <a class="link-logo main-logo" href="index.html"><img class="site-logo" src="img/logo.svg" width="145"
+            height="36" alt="логотип Device."></a>
+        <div class="navigation-first-wrapper">
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="search-form">Поиск по сайту</label>
+            <input class="search-form-field" name="search-form" id="search-form" type="search"
+              placeholder="Текст поиска">
+            <button class="search-form-submit" type="button">Найти</button>
+          </form>
+          <nav class="user-navigation">
+            <ul class="user-navigation-list">
+              <li class="user-navigation-item user-navigation-login">
+                <svg class="user-icon" aria-hidden="true" focusable="false" width="15" height="13" viewBox="0 0 15 13"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#a)">
+                    <path
+                      d="M1 12.39h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3 0-1.9-1.6-3.5-3.5-3.5S4 1.99 4 3.89c0 1.3.7 2.4 1.7 3-2.6.7-4.5 2.9-4.7 5.5Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path transform="translate(0 .39)" d="M0 0h15v12H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <a class="user-navigation-link user-navigation-link-login" href="#">Войти</a>
+              </li>
+              <!-- <li class="user-navigation-login visually-hidden">
                   <a class="user-navigation-link" href="#">Выйти</a>
                 </li> -->
-                <li class="user-navigation-item user-navigation-compare">
-                  <svg class="user-icon" aria-hidden="true" focusable="false" width="10" height="13" viewBox="0 0 10 13"
-                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 .39H4v12h2v-12ZM2 4.39H0v8h2v-8ZM10 3.39H8v9h2v-9Z" />
-                  </svg>
-                  <a class="user-navigation-link user-navigation-link-compare" href="#">Сравнить</a>
-                </li>
-                <li class="user-navigation-item user-navigation-cart">
-                  <svg class="user-icon-cart" aria-hidden="true" focusable="false" width="16" height="14"
-                    viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="m15.3 5.39-3.5.2L8.6.69c-.1-.2-.4-.3-.6-.3-.2 0-.5.1-.6.3l-3.2 4.9H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1l1.9-6.9v-.2c0-.4-.3-.8-.7-.8ZM8 2.29l2.2 3.2H5.9L8 2.29Z" />
-                  </svg>
-                  <svg class="user-icon" aria-hidden="true" focusable="false" width="21" height="22" viewBox="0 0 21 22"
-                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="10.5" cy="11.39" r="10.5" fill="#fff" />
-                    <path
-                      d="M7.4 15.89a.35.35 0 0 1-.24-.09.35.35 0 0 1-.08-.23v-.45c0-.09.02-.18.07-.28.04-.1.14-.22.28-.34l2.97-2.97c.47-.4.84-.74 1.12-1.02.28-.29.47-.56.58-.82.12-.26.19-.54.19-.82 0-.53-.15-.95-.45-1.26-.3-.31-.74-.47-1.33-.47-.38 0-.7.08-.97.24-.27.15-.48.36-.64.63-.15.26-.25.56-.3.9-.02.11-.07.2-.15.24a.4.4 0 0 1-.21.07h-.73a.32.32 0 0 1-.2-.07.27.27 0 0 1-.1-.2 3.1 3.1 0 0 1 1.87-2.74c.41-.18.89-.28 1.43-.28.73 0 1.34.14 1.8.41.48.26.83.61 1.05 1.05a3.12 3.12 0 0 1 .13 2.58c-.14.33-.35.66-.62 1-.26.3-.58.63-.98.97l-2.68 2.73h4.36c.1 0 .19.03.24.08.07.06.1.14.1.24v.58c0 .09-.03.17-.1.23-.05.06-.13.09-.24.09H7.4Z"
-                      fill="#000" />
-                  </svg>
-                  <a class="user-navigation-link user-navigation-link-cart" href="#">Корзина</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <nav class="main-navigation">
-            <ul class="main-navigation-list">
-              <li class="main-navigation-item main-navigation-item-catalog">
-                <a class="main-navigation-link main-navigation-link-catalog" href="/catalog.html">Каталог товаров
-                  <svg class="main-navigation-icon-catalog" aria-hidden="true" focusable="false" width="50" height="51"
-                    viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle opacity=".3" cx="25" cy="25.79" r="24" stroke="#000" stroke-width="2" />
-                    <g opacity=".3" clip-path="url(#a)">
-                      <path d="M33 24.79h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" fill="#000" />
-                    </g>
-                    <defs>
-                      <clipPath id="a">
-                        <path fill="#fff" transform="translate(17 17.79)" d="M0 0h16v16H0z" fill="#8F3A84" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </a>
-                <ul class="second-navigation">
-                  <li class="row-submenu first-row-submenu">
-                    <a class="main-navigation-sub-link active" href="#">Виртуальная реальность</a>
-                    <a class="main-navigation-sub-link" href="#">Моноподы для селфи</a>
-                    <a class="main-navigation-sub-link" href="#">Экшн-камеры</a>
-                  </li>
-                  <li class="row-submenu second-row-submenu">
-                    <a class="main-navigation-sub-link" href="#">Фитнес-браслеты</a>
-                    <a class="main-navigation-sub-link" href="#">Умные часы</a>
-                  </li>
-                  <li class="row-submenu third-row-submenu">
-                    <a class="main-navigation-sub-link" href="#">Квадракоптеры</a>
-                  </li>
-                </ul>
+              <li class="user-navigation-item user-navigation-compare">
+                <svg class="user-icon" aria-hidden="true" focusable="false" width="10" height="13" viewBox="0 0 10 13"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 .39H4v12h2v-12ZM2 4.39H0v8h2v-8ZM10 3.39H8v9h2v-9Z" />
+                </svg>
+                <a class="user-navigation-link user-navigation-link-compare" href="#">Сравнить</a>
               </li>
-              <li class="main-navigation-item main-navigation-item-delivery">
-                <a class="main-navigation-link main-navigation-link-delivery" href="#">Доставка</a>
-              </li>
-              <li class="main-navigation-item main-navigation-item-warranty">
-                <a class="main-navigation-link main-navigation-link-warranty active" href="#">Гарантия</a>
-              </li>
-              <li class="main-navigation-item main-navigation-item-contacts">
-                <a class="main-navigation-link main-navigation-link-contacts" href="#">Контакты</a>
+              <li class="user-navigation-item user-navigation-cart">
+                <svg class="user-icon-cart" aria-hidden="true" focusable="false" width="16" height="14"
+                  viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m15.3 5.39-3.5.2L8.6.69c-.1-.2-.4-.3-.6-.3-.2 0-.5.1-.6.3l-3.2 4.9H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1l1.9-6.9v-.2c0-.4-.3-.8-.7-.8ZM8 2.29l2.2 3.2H5.9L8 2.29Z" />
+                </svg>
+                <svg class="user-icon" aria-hidden="true" focusable="false" width="21" height="22" viewBox="0 0 21 22"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="10.5" cy="11.39" r="10.5" fill="#fff" />
+                  <path
+                    d="M7.4 15.89a.35.35 0 0 1-.24-.09.35.35 0 0 1-.08-.23v-.45c0-.09.02-.18.07-.28.04-.1.14-.22.28-.34l2.97-2.97c.47-.4.84-.74 1.12-1.02.28-.29.47-.56.58-.82.12-.26.19-.54.19-.82 0-.53-.15-.95-.45-1.26-.3-.31-.74-.47-1.33-.47-.38 0-.7.08-.97.24-.27.15-.48.36-.64.63-.15.26-.25.56-.3.9-.02.11-.07.2-.15.24a.4.4 0 0 1-.21.07h-.73a.32.32 0 0 1-.2-.07.27.27 0 0 1-.1-.2 3.1 3.1 0 0 1 1.87-2.74c.41-.18.89-.28 1.43-.28.73 0 1.34.14 1.8.41.48.26.83.61 1.05 1.05a3.12 3.12 0 0 1 .13 2.58c-.14.33-.35.66-.62 1-.26.3-.58.63-.98.97l-2.68 2.73h4.36c.1 0 .19.03.24.08.07.06.1.14.1.24v.58c0 .09-.03.17-.1.23-.05.06-.13.09-.24.09H7.4Z"
+                    fill="#000" />
+                </svg>
+                <a class="user-navigation-link user-navigation-link-cart" href="#">Корзина</a>
               </li>
             </ul>
           </nav>
         </div>
-      </header>
-    </div>
+        <nav class="main-navigation">
+          <ul class="main-navigation-list">
+            <li class="main-navigation-item main-navigation-item-catalog">
+              <a class="main-navigation-link main-navigation-link-catalog" href="/catalog.html">Каталог товаров
+
+                <!-- <svg class="main-navigation-icon-catalog" aria-hidden="true" focusable="false" width="50" height="51"
+                    viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="icon-center" cx="25" cy="25.79" r="24" stroke="#000" stroke-width="2" />
+                    <g clip-path="url(#a)">
+                      <path class="icon-center" d="M33 24.79h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" fill="#000" />
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#000" transform="translate(17 17.79)" d="M0 0h16v16H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg> -->
+
+              </a>
+              <ul class="second-navigation">
+                <li class="row-submenu first-row-submenu">
+                  <a class="main-navigation-sub-link active" href="#">Виртуальная реальность</a>
+                  <a class="main-navigation-sub-link" href="#">Моноподы для селфи</a>
+                  <a class="main-navigation-sub-link" href="#">Экшн-камеры</a>
+                </li>
+                <li class="row-submenu second-row-submenu">
+                  <a class="main-navigation-sub-link" href="#">Фитнес-браслеты</a>
+                  <a class="main-navigation-sub-link" href="#">Умные часы</a>
+                </li>
+                <li class="row-submenu third-row-submenu">
+                  <a class="main-navigation-sub-link" href="#">Квадракоптеры</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-navigation-item main-navigation-item-delivery">
+              <a class="main-navigation-link main-navigation-link-delivery" href="#">Доставка</a>
+            </li>
+            <li class="main-navigation-item main-navigation-item-warranty">
+              <a class="main-navigation-link main-navigation-link-warranty active" href="#">Гарантия</a>
+            </li>
+            <li class="main-navigation-item main-navigation-item-contacts">
+              <a class="main-navigation-link main-navigation-link-contacts" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <!-- Заголовок и хлебрые крошки -->
 
@@ -288,7 +287,7 @@
                   </div>
                   <ul class="catalot-pagination-sublist">
                     <li class="catalog-pagination-subitem">
-                      <a class="pagination-link" href="#">1</a>
+                      <a class="pagination-link pagination-link-current" href="#">1</a>
                     </li>
                     <li class="catalog-pagination-subitem">
                       <a class="pagination-link" href="#">2</a>
