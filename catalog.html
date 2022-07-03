@@ -145,19 +145,27 @@
               <form class="catalog-filter-form" method="get" action="https://echo.htmlacademy.ru">
                 <fieldset class="catalog-filter-group">
                   <legend class="filter-name">Стоимость</legend>
-                  <div class="rage-control">
-                    <div class="scale">
-                      <div class="bar">
 
-                      </div>
-                      <div class="toggle toggle-min">
-                        <label class="min-price">от <input type="number" name="min-price" value="0"></label>
-                      </div>
-                      <div class="toggle toggle-max">
-                        <label class="max-price">до <input type="number" name="max-price" value="5000"></label>
+                  <div class="range">
+                    <div class="range-scale">
+                      <div class="range-bar" style="left: 9px; width: 128px">
+                        <button class="range-toggle toggle-min">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </button>
+                        <button class="range-toggle toggle-max">
+                          <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </button>
                       </div>
                     </div>
+                    <div class="range-inputs-wrapper">
+                      <label class="range-inputs-label">от <input class="range-input" type="number" name="min-price"
+                          value="0"></label>
+                      <label class="range-inputs-label">до <input class="range-input" type="number" name="max-price"
+                          value="5000"></label>
+                    </div>
+
                   </div>
+
                 </fieldset>
                 <fieldset class="catalog-filter-group">
                   <legend class="filter-name">Цвет</legend>

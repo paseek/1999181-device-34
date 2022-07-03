@@ -1558,7 +1558,7 @@ img {
 
 .catalog-filter {
   width: 320px;
-  margin-left: 60px;
+  /* margin-left: 60px; */
 }
 
 .catalog-right-column {
@@ -1573,24 +1573,122 @@ img {
   line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  margin: 0;
+  width: 200px;
+  margin: 0 auto;
   margin-bottom: 35px;
   padding: 25px 0;
 }
 
+.catalog-filter-form {
+  /* position: relative; */
+  width: 200px;
+  margin: 0 auto;
+}
+
 .catalog-filter-group {
+  position: relative;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   border: none;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
   padding: 0;
 }
 
 .filter-name {
-  margin-bottom: 20px;
+  padding-top: 14px;
+  margin-bottom: 30px;
 }
+
+.filter-name::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--basic-black);
+}
+
+.range-scale {
+  position: relative;
+  width: 200px;
+  height: 2px;
+  background-color: var(--basic-grey);
+  margin-bottom: 12px;
+}
+
+.range-bar {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--basic-black);
+}
+
+.range-toggle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--basic-black);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  opacity: 0.5;
+}
+
+.range-toggle:active {
+  background-color: var(--basic-black);
+}
+
+.range-toggle:focus {
+  outline: 2px solid var(--special-purple);
+  outline-offset: 2px;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -18px;
+}
+
+.toggle-max {
+  top: -8px;
+  left: 128px;
+}
+
+.range-inputs-wrapper {
+  display: flex;
+  /* justify-content: center; */
+}
+
+.range-inputs-label {
+  display: flex;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  opacity: 0.3;
+}
+
+.range-input {
+  width: 50px;
+  padding: 0 2px;
+  font: inherit;
+  /* text-align: center; */
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 
 .catalog-filter-list {
   list-style-type: none;
