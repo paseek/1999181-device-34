@@ -534,31 +534,35 @@
         <section class="modal-content">
           <h2 class="title modal-title">Доставка под заказ</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="modal-form-item modal-form-item-name">
-              <label class="modal-subtitle" for="modal-name">Ваше имя:</label>
-              <input class="modal-field" type="text" name="modal-name" id="modal-name" placeholder="Введите имя">
-              <img class="modal-name-icon" src="img/icons/modal-login.svg" width="13" height="12" alt="">
-            </p>
-            <p class="modal-form-item  modal-form-item-email">
-              <label class="modal-subtitle" for="modal-email">Ваш e-mail:</label>
-              <input class="modal-field" type="email" name="modal-email" id="modal-email" placeholder="почта" required>
-              <img class="modal-name-icon" src="img/icons/modal-email.svg" width="15" height="12" alt="">
-            </p>
-            <p class="modal-form-item  modal-form-item-text">
-              <label class="modal-subtitle" for="modal-desc">Что нужно привезти:</label>
-              <input class="modal-field" type="text" name="modal-desc" id="modal-desc" placeholder="В свободной форме">
-            </p>
-
-            <p class="modal-form-item  modal-form-item-quantity">
-              <label class="modal-subtitle" for="modal-quantity">Количество:</label>
-              <span class="modal-quantity-wrapper">
-                <button class="basket basket-remove" type="button"></button>
-                <input class="modal-field basket-amount" type="number" name="basket-amount" id="modal-quantity"
-                  value="1">
-                <button class="basket basket-add" type="button"></button>
-              </span>
-            </p>
-
+            <div class="modal-form-item-wrapper">
+              <p class="modal-form-item modal-form-item-name">
+                <label class="modal-subtitle" for="modal-name">Ваше имя:</label>
+                <input class="modal-field" type="text" name="modal-name" id="modal-name" placeholder="Введите имя">
+                <img class="modal-name-icon" src="img/icons/modal-login.svg" width="13" height="12" alt="">
+              </p>
+              <p class="modal-form-item modal-form-item-email">
+                <label class="modal-subtitle" for="modal-email">Ваш e-mail:</label>
+                <input class="modal-field" type="email" name="modal-email" id="modal-email" placeholder="почта"
+                  required>
+                <img class="modal-name-icon" src="img/icons/modal-email.svg" width="15" height="12" alt="">
+              </p>
+            </div>
+            <div class="modal-form-item-wrapper">
+              <p class="modal-form-item modal-form-item-text">
+                <label class="modal-subtitle" for="modal-desc">Что нужно привезти:</label>
+                <input class="modal-field modal-error" type="text" name="modal-desc" id="modal-desc"
+                  placeholder="В свободной форме">
+              </p>
+              <p class="modal-form-item modal-form-item-quantity">
+                <label class="modal-subtitle" for="modal-quantity">Количество:</label>
+                <span class="basket-amoun-wrapper">
+                  <button class="basket basket-remove" type="button"></button>
+                  <input class="modal-field basket-amount" type="number" name="basket-amount" id="modal-quantity"
+                    value="1">
+                  <button class="basket basket-add" type="button"></button></label>
+                </span>
+              </p>
+            </div>
             <button class="button button-modal-submit" type="submit">Отправить</button>
           </form>
         </section>
