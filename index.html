@@ -554,7 +554,22 @@
                   placeholder="В свободной форме">
               </p>
               <p class="modal-form-item modal-form-item-quantity">
-                <label class="modal-subtitle" for="modal-quantity">Количество:</label>
+                <span class="modal-subtitle">
+                  <label class="modal-subtitle" for="modal-quantity">Количество:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                      <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="26" height="26"
+                        viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="13" cy="13" r="13" fill="#FFE17F" />
+                        <path d="M14 7h-2v2h2V7ZM14 11h-2v8h2v-8Z" fill="#000" />
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно.
+                      Привезём сколько получится по
+                      требованиям
+                      к провозу багажа.</span>
+                  </span>
+                </span>
                 <span class="basket-amoun-wrapper">
                   <button class="basket basket-remove" type="button"></button>
                   <input class="modal-field basket-amount" type="number" name="basket-amount" id="modal-quantity"
