@@ -315,6 +315,37 @@ img {
   background-position: 20px; */
 }
 
+/* Popover */
+
+.popover {
+  position: absolute;
+  top: 40px;
+  right: -80px;
+  box-sizing: border-box;
+  width: 320px;
+  font-family: inherit;
+  color: var(--basic-white);
+  background-color: var(--basic-black);
+  min-height: 217px;
+}
+
+.popover-content {
+  height: 100%;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 213px 57px;
+}
+
+.cart-item-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0;
+}
+
 .user-navigation-link {
   text-decoration: none;
   color: inherit;
@@ -938,24 +969,25 @@ img {
   text-align: start;
 }
 
+.tab-title-link-active .button::before {
+  background-color: transparent;
+}
+
+.tab-title-link-active .button-tab:hover {
+  background-color: transparent;
+}
+
 .button-tab {
   min-width: 160px;
 }
 
-/* .tab-title-link:hover,
-.button-tab:hover {
+.button-tab-active:hover {
   color: rgba(255, 225, 127, 0.5);
-  background-color: var(--basic-black);
-} */
+}
 
-/* .button-tab:active {
+.button-tab-active:active {
   color: rgba(255, 225, 127, 0.3);
-} */
-
-/* .button-tab:focus {
-  outline: 2px solid var(--special-purple);
-  outline-offset: 2px;
-} */
+}
 
 .tab-contents-item {
   display: flex;
