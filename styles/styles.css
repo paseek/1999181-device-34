@@ -593,17 +593,15 @@ header {
   top: 64px;
 }
 
-.second-navigation:hover {
+/* .second-navigation:hover {
   display: flex;
   padding-left: 60px;
   padding-right: 60px;
   position: absolute;
-  left: 0;
-  top: 0;
   left: -60px;
   top: 42px;
   z-index: 1;
-}
+} */
 
 .main-navigation-item-catalog:focus-within .second-navigation {
   display: flex;
@@ -1743,8 +1741,6 @@ header {
 
 .modal-form-item-name {
   width: 360px;
-  /* grid-column: 1 / 3;
-  grid-row: 1 / 2; */
 }
 
 .modal-form-item-email {
@@ -1839,15 +1835,27 @@ header {
   width: 100%;
 } */
 
+
+.modal-name-icon {
+  position: absolute;
+  bottom: 44px;
+  right: 24px;
+}
+
+/* Modal error style */
+
 .modal-error {
   border: 2px solid var(--status-error);
   box-sizing: border-box;
 }
 
-.modal-name-icon {
-  position: absolute;
-  bottom: 24px;
-  right: 24px;
+.modal-error-message {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--status-error);
 }
 
 .basket {

@@ -539,19 +539,22 @@
                 <label class="modal-subtitle" for="modal-name">Ваше имя:</label>
                 <input class="modal-field" type="text" name="modal-name" id="modal-name" placeholder="Введите имя">
                 <img class="modal-name-icon" src="img/icons/modal-login.svg" width="13" height="12" alt="">
+                <span class="modal-error-message"></span>
               </p>
               <p class="modal-form-item modal-form-item-email">
                 <label class="modal-subtitle" for="modal-email">Ваш e-mail:</label>
-                <input class="modal-field" type="email" name="modal-email" id="modal-email" placeholder="почта"
-                  required>
+                <input class="modal-field modal-error" type="email" name="modal-email" id="modal-email"
+                  placeholder="почта" required>
                 <img class="modal-name-icon" src="img/icons/modal-email.svg" width="15" height="12" alt="">
+                <span class="modal-error-message">Забавный у вас адрес</span>
               </p>
             </div>
             <div class="modal-form-item-wrapper">
               <p class="modal-form-item modal-form-item-text">
                 <label class="modal-subtitle" for="modal-desc">Что нужно привезти:</label>
-                <input class="modal-field modal-error" type="text" name="modal-desc" id="modal-desc"
+                <input class="modal-field" type="text" name="modal-desc" id="modal-desc"
                   placeholder="В свободной форме">
+                <span class="modal-error-message"></span>
               </p>
               <p class="modal-form-item modal-form-item-quantity">
                 <span class="modal-subtitle">
