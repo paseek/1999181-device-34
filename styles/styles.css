@@ -537,7 +537,7 @@ header {
   background-repeat: no-repeat;
   background-position: right top 1px;
   position: relative;
-  z-index: 2;
+  /* z-index: 2; */
 }
 
 .main-navigation-link {
@@ -2089,8 +2089,7 @@ header {
 }
 
 .range-toggle:hover {
-  background-color: var(--basic-light-grey);
-  opacity: 0.5;
+  border: 2px solid rgba(0, 0, 0, 0.5);
 }
 
 .range-toggle:active {
