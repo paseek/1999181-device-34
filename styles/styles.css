@@ -2007,16 +2007,20 @@ header {
 
 .catalog-title {
   margin: 0;
-  margin-top: 35px;
-  margin-bottom: 16px;
+  margin-top: 38px;
+  margin-bottom: 15px;
   margin-left: 60px;
 }
 
 .breadcrumbs-list {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
   margin-left: 60px;
   padding: 0;
 }
@@ -2035,10 +2039,10 @@ header {
 }
 
 .breadcrumbs-item:not(:last-child) {
-  padding-right: 34px;
+  padding-right: 37px;
   background-image: url(/img/icons/breadcrums-arrow.svg);
   background-repeat: no-repeat;
-  background-position: right 14px center;
+  background-position: right 16px center;
 }
 
 /* Products */
@@ -2074,7 +2078,7 @@ header {
   width: 200px;
   margin: 0 auto;
   margin-bottom: 32px;
-  padding: 25px 0;
+  padding: 23px 0;
 }
 
 .catalog-filter-form {
@@ -2101,8 +2105,8 @@ header {
 
 .filter-name {
   padding: 0;
-  padding-top: 14px;
-  margin-bottom: 28px;
+  padding-top: 17px;
+  margin-bottom: 29px;
 }
 
 /* .filter-name::before {
@@ -2189,8 +2193,8 @@ header {
   font-size: 15px;
   line-height: 18px;
   opacity: 0.3;
-  margin-top: 6px;
-  margin-left: -13px;
+  margin-top: -1px;
+  margin-left: -12px;
   margin-right: 44px;
 }
 
@@ -2315,7 +2319,7 @@ header {
 }
 
 .catalog-filter-item {
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 
 .catalog-filter-item:last-child {
