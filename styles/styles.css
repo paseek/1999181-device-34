@@ -1426,7 +1426,9 @@ header {
   outline: none;
 }
 
-.subscribe-field:invalid {
+/* Класс для валидации формы подписки */
+
+.subscribe-message-error {
   border-bottom: 3px solid var(--status-error);
 }
 
