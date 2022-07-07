@@ -205,7 +205,13 @@ header {
   position: relative;
 }
 
+/* .search-form-wrapper {
+  position: relative;
+} */
+
 .search-form-field {
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
   padding-left: 48px;
@@ -221,21 +227,42 @@ header {
   background-position: 20px;
 }
 
-.search-form-field:before {
+/* .search-form-field::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  border: none;
   margin: 0;
   padding: 0;
-  padding-left: 48px;
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
-  border-radius: 20px 0 0 20px;
-  border: 2px solid var(--basic-black);
-  border-right: 1px solid var(--basic-black);
-  background-color: var(--special-yellow);
-  background-image: url(/img/icons/search.svg);
-  background-repeat: no-repeat;
-  background-position: 20px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+} */
+
+/* .search-form::before {
+  width: 357px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background-color: transparent;
 }
+
+.search-form::after {
+  width: 160px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 357px;
+  content: "";
+  background-color: transparent;
+} */
 
 .search-form-field::placeholder {
   color: rgba(0, 0, 0, 0.3);
@@ -246,11 +273,11 @@ header {
   color: var(--basic-black);
 }
 
-.search-form-field:focus {
+/* .search-form-field:focus {
   outline: 2px solid var(--special-purple);
   outline-offset: 2px;
   z-index: 1;
-}
+} */
 
 .search-form-field:disabled {
   opacity: 0.3;
@@ -260,6 +287,20 @@ header {
 .search-form-field:disabled:hover::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
+
+.search-form-field:focus {
+  outline: none;
+}
+
+.search-form-wrapper:focus-within {
+  outline: 2px solid var(--special-purple);
+  outline-offset: 2px;
+}
+
+/* .search-form:focus-within::before {
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 2px var(--special-purple);
+} */
 
 .search-form-submit {
   font-family: inherit;
@@ -275,6 +316,7 @@ header {
   width: 160px;
   height: 100%;
 }
+
 
 .search-form-submit::before {
   position: absolute;
@@ -300,7 +342,7 @@ header {
 }
 
 .search-form-submit:focus {
-  outline: none
+  outline: none;
 }
 
 .search-form-submit:focus::before {
@@ -1625,13 +1667,15 @@ header {
   background-color: var(--special-yellow-dark);
 }
 
-.footer-social-button:active::before {
-  opacity: 0.3;
-}
-
 .footer-social-button:focus::after {
   outline: 2px solid var(--special-purple);
   outline-offset: 2px;
+  /* border: 2px solid transparent;
+  box-shadow: 0 0 0 2px var(--special-purple); */
+}
+
+.footer-social-button:active::before {
+  opacity: 0.3;
 }
 
 .footer-services-link {
@@ -1690,7 +1734,7 @@ header {
   width: 100%;
   height: 100%;
   background-color: rgba(240, 240, 240, 0.9);
-  z-index: 1;
+  z-index: 10;
 }
 
 .modal-container-close {

@@ -18,8 +18,11 @@
           alt="логотип Device."></a>
       <div class="navigation-first-wrapper">
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="search-form">Поиск по сайту</label>
-          <input class="search-form-field" name="search-form" id="search-form" type="search" placeholder="Текст поиска">
+          <!-- <label class="visually-hidden" for="search-form">Поиск по сайту</label> -->
+          <label class="search-form-wrapper" aria-label="Поиск по сайту">
+            <input class="search-form-field" name="search-form" id="search-form" type="search"
+              placeholder="Текст поиска">
+          </label>
           <button class="search-form-submit" type="button">Найти</button>
         </form>
         <nav class="user-navigation">
@@ -526,7 +529,7 @@
       </div>
     </footer>
     <!-- данный класс закрывает окно - modal-container-close -->
-    <div class="modal-container">
+    <div class="modal-container modal-container-close">
       <div class="modal modal-delivery">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
