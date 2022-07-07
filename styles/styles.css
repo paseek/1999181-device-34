@@ -135,7 +135,7 @@ header {
   z-index: -1;
 }
 
-.button::before::hover {
+.button::before:hover {
   top: 0;
   height: 100%;
 }
@@ -2086,10 +2086,10 @@ header {
   padding: 0;
 }
 
-.catalog-filter-group:last-child(1) {
+/* .catalog-filter-group:last-child {
   margin: 0;
   margin-bottom: 35px;
-}
+} */
 
 .filter-name {
   padding: 0;
