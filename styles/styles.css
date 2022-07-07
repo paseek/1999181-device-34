@@ -150,7 +150,7 @@ header {
   color: var(--basic-black);
   background-color: var(--special-yellow);
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 38px;
 }
 
 /* Logo */
@@ -162,7 +162,7 @@ header {
 .main-logo {
   display: inline-block;
   position: relative;
-  transform: translateY(-22px);
+  transform: translateY(-21px);
 }
 
 /* Pages */
@@ -214,7 +214,7 @@ header {
   height: 100%;
   margin: 0;
   padding: 0;
-  padding-left: 48px;
+  padding-left: 44px;
   font-family: inherit;
   font-size: inherit;
   color: inherit;
@@ -224,7 +224,7 @@ header {
   background-color: var(--special-yellow);
   background-image: url(/img/icons/search.svg);
   background-repeat: no-repeat;
-  background-position: 20px;
+  background-position: 14px;
 }
 
 /* .search-form-field::before {
@@ -536,6 +536,7 @@ header {
 .user-navigation-link-cart {
   padding-left: 43px;
 }
+
 
 .user-icon {
   position: absolute;
@@ -1750,11 +1751,11 @@ header {
   background-color: var(--basic-white);
   border: 10px solid var(--basic-black);
   box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 }
 
 .modal-delivery {
   width: 920px;
-  box-sizing: border-box;
 }
 
 .modal-close-button {
@@ -1799,6 +1800,7 @@ header {
 
 .modal-form-item-quantity {
   width: 180px;
+
 }
 
 .button-modal-submit {
@@ -1806,37 +1808,6 @@ header {
   background-color: transparent;
   z-index: 0;
 }
-
-
-.button-modal-submit:hover {
-  background-color: var(--special-yellow);
-}
-
-.button-modal-submit:active {
-  background-color: var(--special-yellow-dark);
-}
-
-.button-modal-submit:active.button::before {
-  background-color: transparent
-}
-
-.button-modal-submit:focus,
-.modal-field:focus,
-.basket:focus {
-  outline: 2px solid var(--special-purple);
-  outline-offset: 2px;
-}
-
-.button-modal-submit:disabled,
-.modal-field:disabled,
-.basket:disabled {
-  background-color: var(--basic-light);
-  opacity: 0.3;
-}
-
-/* .modal-form .button::before {
-  background-color: transparent;
-} */
 
 .modal-form-item {
   display: flex;
@@ -1894,9 +1865,13 @@ header {
   color: var(--status-error);
 }
 
+.basket-amoun-wrapper {
+  display: flex;
+}
+
 .basket {
   width: 60px;
-  height: 60px;
+  /* height: 60px; */
   border: none;
   cursor: pointer;
   display: inline-block;
@@ -1915,10 +1890,6 @@ header {
   margin: 0;
 }
 
-.basket-amoun-wrapper {
-  display: flex;
-}
-
 .basket-remove {
   background-image: url(/img/icons/basket-remove-icon.svg);
   background-repeat: no-repeat;
@@ -1930,6 +1901,43 @@ header {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+
+.button-modal-submit:hover {
+  background-color: var(--special-yellow);
+}
+
+.button-modal-submit:active {
+  background-color: var(--special-yellow-dark);
+}
+
+.button-modal-submit:active.button::before {
+  background-color: transparent
+}
+
+.button-modal-submit:focus {
+  outline: 2px solid var(--special-purple);
+  outline-offset: 2px;
+}
+
+.modal-field:focus,
+.basket:focus {
+  outline: 2px solid var(--special-purple);
+  outline-offset: 2px;
+  z-index: 1;
+}
+
+
+.button-modal-submit:disabled,
+.modal-field:disabled,
+.basket:disabled {
+  background-color: var(--basic-light);
+  opacity: 0.3;
+}
+
+/* .modal-form .button::before {
+  background-color: transparent;
+} */
 
 /* Tolltip */
 
@@ -2097,10 +2105,21 @@ header {
   margin-bottom: 28px;
 }
 
-.filter-name::before {
+/* .filter-name::before {
   position: absolute;
   content: "";
   top: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--basic-black);
+} */
+
+
+.catalog-filter-list::before {
+  position: absolute;
+  content: "";
+  top: -64px;
   right: 0;
   width: 100%;
   height: 2px;
