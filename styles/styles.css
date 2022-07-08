@@ -363,6 +363,75 @@ header {
 /* User-navigation */
 
 .user-navigation-list {
+  width: 496px;
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+.user-navigation-item {
+  /* display: flex; */
+}
+
+.user-navigation-login {
+  margin-right: auto;
+}
+
+.user-navigation-logout {
+  margin-right: 28px;
+  opacity: 0.3;
+}
+
+.user-navigation-compare {
+  margin-right: 36px;
+}
+
+.user-icon {
+  fill: var(--basic-black);
+  margin-right: 6px;
+}
+
+.user-icon-cart {
+  fill: var(--basic-black);
+  margin-right: 6px;
+}
+
+.user-navigation-link-cart::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 94px;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: var(--basic-white);
+  content: "";
+  z-index: 1;
+}
+
+.user-navigation-link-cart::after {
+  position: absolute;
+  top: 7px;
+  right: 100px;
+  bottom: 0;
+  margin: auto;
+  content: "2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  z-index: 1;
+}
+
+/*
+
+.user-navigation-list {
   display: flex;
   list-style-type: none;
   padding: 0;
@@ -389,10 +458,52 @@ header {
 .user-navigation-cart {
   width: 117px;
   text-align: end;
-  /* background-image: url(/img/icons/cart-counter.svg);
+} */
+
+/* background-image: url(/img/icons/cart-counter.svg);
   background-repeat: no-repeat;
   background-position: 20px; */
-}
+
+
+/*  Вставть под cart-
+  .user-navigation-link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .user-navigation-link-login {
+    padding-left: 25px;
+  }
+
+  .user-navigation-link-compare {
+    padding-left: 22px;
+  }
+
+  .user-navigation-link-cart {
+    padding-left: 43px;
+  }
+
+
+  .user-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: auto;
+    fill: var(--basic-black);
+    margin: auto 0;
+  }
+
+  .user-icon-cart {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 86px;
+    fill: var(--basic-black);
+    margin: auto 0;
+  } */
+
+
+
 
 /* Popover */
 
@@ -523,37 +634,6 @@ header {
 .user-navigation-link {
   text-decoration: none;
   color: inherit;
-}
-
-.user-navigation-link-login {
-  padding-left: 25px;
-}
-
-.user-navigation-link-compare {
-  padding-left: 22px;
-}
-
-.user-navigation-link-cart {
-  padding-left: 43px;
-}
-
-
-.user-icon {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: auto;
-  fill: var(--basic-black);
-  margin: auto 0;
-}
-
-.user-icon-cart {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 86px;
-  fill: var(--basic-black);
-  margin: auto 0;
 }
 
 /* Main-navigation */
