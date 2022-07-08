@@ -371,15 +371,17 @@ header {
   margin: 0;
   text-decoration: none;
   color: inherit;
-  position: relative;
+  /* position: relative; */
 }
 
 .user-navigation-item {
-  /* display: flex; */
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .user-navigation-login {
   margin-right: auto;
+  max-width: 190px;
 }
 
 .user-navigation-logout {
@@ -389,6 +391,10 @@ header {
 
 .user-navigation-compare {
   margin-right: 36px;
+}
+
+.user-navigation-link-cart {
+  position: relative;
 }
 
 .user-icon {
@@ -401,12 +407,12 @@ header {
   margin-right: 6px;
 }
 
-.user-navigation-link-cart::before {
+/* .user-navigation-link-cart::before { */
+.user-navigation-cart-badge::before {
   position: absolute;
-  top: 0;
+  top: 5px;
+  left: -14px;
   bottom: 0;
-  margin: auto;
-  right: 94px;
   width: 21px;
   height: 21px;
   border-radius: 50%;
@@ -415,12 +421,12 @@ header {
   z-index: 1;
 }
 
-.user-navigation-link-cart::after {
+/* .user-navigation-link-cart::after { */
+.user-navigation-cart-badge::after {
   position: absolute;
   top: 7px;
-  right: 100px;
+  left: -8px;
   bottom: 0;
-  margin: auto;
   content: "2";
   font-style: normal;
   font-weight: 400;
