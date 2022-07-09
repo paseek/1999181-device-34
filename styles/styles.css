@@ -937,8 +937,12 @@ header {
   opacity: 0.3;
 }
 
-.slider-button:focus,
 .slider-pagination-button:focus {
+  outline: none;
+}
+
+.slider-button:focus,
+.slider-pagination-button:focus::before {
   outline: 2px solid var(--special-purple);
   outline-offset: 2px;
 }
@@ -958,6 +962,11 @@ header {
   max-width: 300px;
   margin: 0;
   padding: 0;
+  z-index: 1;
+}
+
+.slider-pagination-item {
+  position: relative;
 }
 
 .slider-pagination-item:not(:last-child) {
@@ -975,6 +984,20 @@ header {
   border-radius: 50%;
   /* background: transparent no-repeat url("../img/icons/slider-pagination-icon.svg"); */
   cursor: pointer;
+}
+
+.slider-pagination-button::before {
+  display: inline-block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  content: "";
+  top: 15px;
+  left: 0;
 }
 
 .slider-pagination-button-active {
