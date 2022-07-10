@@ -81,11 +81,6 @@ img {
   object-fit: contain;
 }
 
-header {
-  padding: 0 60px;
-  box-sizing: border-box;
-}
-
 .title {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
@@ -139,6 +134,8 @@ header {
   background-color: var(--special-yellow);
   margin: 0 auto;
   margin-top: 38px;
+  padding: 0 60px;
+  box-sizing: border-box;
 }
 
 /* Logo */
@@ -622,7 +619,7 @@ header {
   width: 128px;
 }
 
-/* Состояния элементов меню */
+/* Menu item states */
 
 .user-navigation-link:hover,
 .main-navigation-link-services:hover,
@@ -915,9 +912,9 @@ header {
 }
 
 .category-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(6, 160px);
+  gap: 40px 40px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -954,6 +951,7 @@ header {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
+  letter-spacing: -0.02em;
   order: 1;
   margin: 0;
   padding: 0;
@@ -1000,8 +998,8 @@ header {
   position: absolute;
   z-index: -10;
   width: 100%;
-  height: 100%;
-  top: 102px;
+  min-height: 289px;
+  top: 114px;
 
   background-color: var(--basic-light);
 }
@@ -1027,10 +1025,9 @@ header {
   right: 0;
   position: absolute;
   width: 7px;
-  height: 100%;
+  height: 319px;
   background-color: var(--basic-black);
   z-index: -1;
-
 }
 
 .tab-title-link {
@@ -1076,6 +1073,7 @@ header {
   justify-content: space-between;
   width: 694px;
   padding: 84px 62px 62px 116px;
+  position: relative;
 }
 
 .tab-contents-item.hidden {
@@ -1083,7 +1081,38 @@ header {
 }
 
 .tab-contents-wrapper {
-  margin-right: 110px;
+  width: 480px;
+  margin-right: 20px;
+}
+
+.tab-images-delivery::before {
+  position: absolute;
+  top: 28%;
+  right: 7%;
+  width: 136px;
+  height: 164px;
+  background-image: url(../img/icons/delivery-man.svg);
+  content: "";
+}
+
+.tab-images-warranty::before {
+  position: absolute;
+  top: 24%;
+  right: 7%;
+  width: 171px;
+  height: 195px;
+  background-image: url(../img/icons/warranty.svg);
+  content: "";
+}
+
+.tab-images-credit::before {
+  position: absolute;
+  top: 24%;
+  right: 7%;
+  width: 156px;
+  height: 188px;
+  background-image: url(../img/icons/credit.svg);
+  content: "";
 }
 
 .tab-contents-title {
@@ -1104,7 +1133,6 @@ header {
 .delivery-button {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -1125,8 +1153,14 @@ header {
   height: 100%;
 }
 
-delivery-text-wrapper {
-  padding: 0 20px;
+.truck-icon {
+  fill: var(--basic-black);
+}
+
+.delivery-text-wrapper {
+  align-self: center;
+  padding-left: 4px;
+  padding-top: 4px;
 }
 
 .delivery-button:hover .truck-icon-wrapper {
@@ -1188,7 +1222,8 @@ delivery-text-wrapper {
 }
 
 .about-us {
-  margin-right: 152px;
+  width: 520px;
+  margin-right: 108px;
   position: relative;
 }
 
@@ -1218,7 +1253,8 @@ delivery-text-wrapper {
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
-  padding-left: 14px;
+  letter-spacing: -0.02em;
+  padding-left: 16px;
   margin-bottom: 19px;
 }
 
@@ -1229,7 +1265,7 @@ delivery-text-wrapper {
 .about-contact-text {
   color: var(--basic-dark);
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .about-us-button {
@@ -1241,6 +1277,7 @@ delivery-text-wrapper {
 }
 
 .contacts {
+  width: 532px;
   position: relative;
 }
 
@@ -1310,6 +1347,7 @@ delivery-text-wrapper {
 .subscribe-form-wrapper {
   display: flex;
   align-items: center;
+  margin-left: -7px;
 }
 
 .subscribe-form {
@@ -1330,7 +1368,7 @@ delivery-text-wrapper {
   border-bottom: 3px solid #c4c4c4;
   background-color: var(--basic-light);
   padding: 0;
-  padding-left: 10px;
+  padding-left: 16px;
 }
 
 .subscribe-field:hover,
@@ -1339,7 +1377,7 @@ delivery-text-wrapper {
   outline: none;
 }
 
-/* Класс для валидации формы подписки */
+/* Validation class for subscription form */
 
 .subscribe-message-error {
   border-bottom: 3px solid var(--status-error);
@@ -1390,6 +1428,7 @@ delivery-text-wrapper {
 
 .subscribe-button-descriptions {
   margin: 0;
+  margin-left: 5px;
 }
 
 .green-check {
@@ -1412,7 +1451,7 @@ delivery-text-wrapper {
 
 .footer-main-wrapper {
   display: flex;
-  margin-bottom: 46px;
+  margin-bottom: 48px;
 }
 
 .footer-logo {
@@ -1469,6 +1508,7 @@ delivery-text-wrapper {
 }
 
 .footer-second-wrapper {
+  min-height: 40px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -1739,10 +1779,16 @@ delivery-text-wrapper {
   line-height: 20px;
 }
 
-.modal-name-icon {
-  position: absolute;
-  bottom: 44px;
-  right: 24px;
+.modal-field-email {
+  background-image: url(../img/icons/modal-email.svg);
+  background-repeat: no-repeat;
+  background-position: center right 21px;
+}
+
+.modal-field-login {
+  background-image: url(../img/icons/modal-login.svg);
+  background-repeat: no-repeat;
+  background-position: center right 21px;
 }
 
 /* Modal error style */
@@ -1771,16 +1817,28 @@ delivery-text-wrapper {
   cursor: pointer;
   display: inline-block;
   padding: 0;
+  margin: 0;
+  background-color: var(--basic-light);
 }
 
 .basket-amount {
   text-align: center;
   width: 60px;
   padding: 0;
+  background-color: var(--basic-light);
 }
+
+/* Remove default arrows in FF */
+
+.basket-amount {
+  -moz-appearance: textfield;
+}
+
+/* Remove default arrows in other browsers */
 
 .basket-amount::-webkit-outer-spin-button,
 .basket-amount::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
@@ -1797,7 +1855,6 @@ delivery-text-wrapper {
   background-position: center;
 }
 
-
 .button-modal-submit:hover {
   background-color: var(--special-yellow);
 }
@@ -1813,6 +1870,10 @@ delivery-text-wrapper {
 .button-modal-submit:focus {
   outline: 2px solid var(--special-purple);
   outline-offset: 2px;
+}
+
+.basket:hover {
+  background-color: var(--basic-grey);
 }
 
 .modal-field:focus,
@@ -1851,6 +1912,7 @@ delivery-text-wrapper {
   width: 100%;
   height: 100%;
   display: block;
+  fill: var(--special-yellow);
 }
 
 .tooltip-text {
@@ -1881,6 +1943,10 @@ delivery-text-wrapper {
   border-bottom: 6px solid var(--basic-black);
   border-right: 7px solid transparent;
   border-left: 7px solid transparent;
+}
+
+.tooltip-icon:hover {
+  fill: var(--special-yellow-dark);
 }
 
 .tooltip-toggle:hover + .tooltip-text,
@@ -1985,7 +2051,7 @@ delivery-text-wrapper {
   margin-bottom: 35px;
 }
 
-/* декоративная полоска */
+/* Decorative strip */
 
 .catalog-filter-group::before {
   position: absolute;
@@ -1996,7 +2062,6 @@ delivery-text-wrapper {
   height: 2px;
   background-color: var(--basic-black);
 }
-
 
 .filter-name {
   padding: 0;
@@ -2430,6 +2495,7 @@ delivery-text-wrapper {
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
+  letter-spacing: -0.02em;
   margin: 0;
 }
 
