@@ -299,6 +299,7 @@ img {
 .user-navigation-item {
   display: flex;
   flex-wrap: wrap;
+  padding: 5px 0;
 }
 
 .user-navigation-login {
@@ -367,12 +368,14 @@ img {
   color: var(--basic-white);
   background-color: var(--basic-black);
   min-height: 217px;
-  z-index: 1;
+  z-index: 2;
   display: none;
+  padding-top: 10px;
 }
 
 .popover-open {
   display: block;
+  z-index: 1;
 }
 
 .popover::before {
@@ -392,10 +395,9 @@ img {
 }
 
 .cart-item {
-  display: grid;
-  grid-template-columns: 39px auto min-content;
-  gap: 23px;
-  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
 }
 
 .cart-item + .cart-item {
@@ -405,7 +407,19 @@ img {
 .cart-items-list {
   display: flex;
   flex-direction: column;
-  padding: 0;
+  padding: 20px;
+}
+
+.cart-item-link {
+  display: grid;
+  grid-template-columns: 39px auto min-content;
+  gap: 23px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: var(--basic-white);
+  width: 183px;
 }
 
 .cart-item-title {
@@ -424,11 +438,11 @@ img {
   height: 10px;
   background-image: url(../img/icons/popover-item-closed.svg);
   background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center;
   border: none;
   cursor: pointer;
   display: inline-block;
-  background-color: transparent;
-  margin-left: 20px;
 }
 
 .cart-summary {
@@ -463,6 +477,15 @@ img {
   margin: 20px;
 }
 
+/* Disable class for cart-open-page*/
+
+.isdisabled {
+  color: rgba(0, 0, 0, 0.3);
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
 .cart-open-page:hover {
   background-color: var(--special-yellow);
 }
@@ -476,21 +499,39 @@ img {
   outline-offset: 2px;
 }
 
-.cart-open-page:disabled {
-  opacity: 0.3;
-}
-
 .user-navigation-link {
   text-decoration: none;
   color: inherit;
 }
 
-.user-navigation-link-cart:hover ~ .popover {
+.user-navigation-cart:hover .popover {
+  display: block;
+  top: 122px;
+  right: 86px;
+}
+
+.user-navigation-cart:focus-within .popover {
   display: block;
 }
 
-.user-navigation-link-cart:focus-within ~ .popover {
-  display: block;
+.cart-item-link:hover,
+.cart-item-button-close:hover {
+  opacity: 0.6;
+}
+
+.cart-item-link:focus {
+  outline: 2px solid var(--special-purple);
+  outline-offset: 2px;
+}
+
+.cart-item-button-close:focus {
+  outline: 2px solid var(--special-purple);
+  outline-offset: 2px;
+}
+
+.cart-item-link:active,
+.cart-item-button-close:active {
+  opacity: 0.3;
 }
 
 /* Main-navigation */
