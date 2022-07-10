@@ -81,11 +81,6 @@ img {
   object-fit: contain;
 }
 
-header {
-  padding: 0 60px;
-  box-sizing: border-box;
-}
-
 .title {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
@@ -139,6 +134,8 @@ header {
   background-color: var(--special-yellow);
   margin: 0 auto;
   margin-top: 38px;
+  padding: 0 60px;
+  box-sizing: border-box;
 }
 
 /* Logo */
