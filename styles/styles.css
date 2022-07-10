@@ -1771,16 +1771,28 @@ delivery-text-wrapper {
   cursor: pointer;
   display: inline-block;
   padding: 0;
+  margin: 0;
+  background-color: var(--basic-light);
 }
 
 .basket-amount {
   text-align: center;
   width: 60px;
   padding: 0;
+  background-color: var(--basic-light);
 }
+
+/* Убираем стрелочки в FF */
+
+.basket-amount {
+  -moz-appearance: textfield;
+}
+
+/* Убираем стрелочки в остальных браузерах */
 
 .basket-amount::-webkit-outer-spin-button,
 .basket-amount::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
@@ -1797,7 +1809,6 @@ delivery-text-wrapper {
   background-position: center;
 }
 
-
 .button-modal-submit:hover {
   background-color: var(--special-yellow);
 }
@@ -1813,6 +1824,10 @@ delivery-text-wrapper {
 .button-modal-submit:focus {
   outline: 2px solid var(--special-purple);
   outline-offset: 2px;
+}
+
+.basket:hover {
+  background-color: var(--basic-grey);
 }
 
 .modal-field:focus,
