@@ -2184,7 +2184,7 @@ img {
   display: flex;
 }
 
-.range-inputs-label {
+.range-inputs-label-from {
   max-width: 100px;
   display: flex;
   font-family: inherit;
@@ -2194,6 +2194,20 @@ img {
   line-height: 18px;
   opacity: 0.3;
   margin-top: -1px;
+  margin-left: -12px;
+  margin-right: 44px;
+}
+
+.range-inputs-label-to {
+  max-width: 100px;
+  display: flex;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  opacity: 0.3;
+  margin-top: -7px;
   margin-left: -12px;
   margin-right: 44px;
 }
