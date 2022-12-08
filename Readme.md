@@ -2,6 +2,7 @@
 
 * Студент: [Павел Щербаков](https://up.htmlacademy.ru/htmlcss/34/user/1999181).
 * Наставник: `Наталья Рыжова`.
+* Ссылка на проект: https://paseek.github.io/1999181-device-34/
 
 ---
 
